@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	height: 35px;
+	margin-top: 9px;
+}
+.nav{	
+	margin-right:12px;
+	float: right;
+	list-style-type: none;
+}
+.nav li{
+    line-height: 40px;
+	float: left;
+	font-size: 13px;
+	font-weight: 700;
+	margin-left:20px;
+}
+.nav li a{
+		color: #333;
+}
+.nav li a:hover{
+	color: blue;
+}
+.nav li.new{
+	font-weight: normal;
+}
+#more{
+	background: #38f;
+	color: white;
+	line-height: 16px;
+	padding: 4px;
+	margin-top: 9px;
+}
+.underbox{
+	line-height: 24px;
+	position: absolute;
+	width: 72px;
+	height: 97px;
+	border: 1px solid #666;
+	text-align: center;
+	margin-left: -20px;
+	display: none;
+}
+.underbox P:hover{
+	background: #3388FF;
+	color: white;
+}
+.new:hover .underbox{
+	display: block;
+}
+.logo img{
+	width: 270px;
+	height: 129px;
+}
+.logo{
+	text-align: center;
+	margin: 140px auto 0 auto;
+}
+.search{
+	width:650px;
+	height: 45px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+input[type=text]{
+		width: 542px;
+		height: 37px;
+		float: left;
+		text-indent:19px;
+		outline: none;
+		border: 1px solid #ccc;
+}
+input[type=submit]{
+	width: 100px;
+	height: 39px;
+	float: left;
+	background: #38F;
+	color: white;
+	border: none;
+}
+input[type=text]:hover{
+	border-color: #999;
+}
+input[type=text]:focus{
+	border-color: #38f;
+}
+.qrcode{
+	width: 60px;
+	height: 86px;
+	margin: 380px auto auto auto;
+}
+p{
+	font-size: 13px;
+	font-weight: 700px;
+	color: #666666;
+	text-align: center;
+}
+.ftcon{
+	width: 550px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 20px;
+	line-height: 30px;
+	transform: scale(0.9,0.9);
+	/*font-size: 13px;*/
+	/*border: 1px solid red;*/
+}
+#up a{
+	/*line-height: 20px;*/
+	margin-left:29px;
+	color: #999;
+}
+#down a{
+	/*line-height: 20px;*/
+	color: #999;
+/*	font-size: 13px;*/
+}
