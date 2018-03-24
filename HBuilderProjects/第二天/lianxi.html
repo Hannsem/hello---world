@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>...</title>
+		<style type="text/css">
+				.aa{width: 50px;
+				height: 50px;
+				line-height: 25px;
+				overflow: hidden;
+				text-align: center;
+				border-radius:100px;
+				transition: 5s;
+				
+			}
+
+			.ac{
+				animation: mov 5s alternate infinite ;
+				animation-duration:5s;
+
+			}
+			@keyframes mov{
+				0%{
+				transform: rotate(180deg);
+				background: wheat;
+				left: 0;}
+				
+			25%{width: 50px;
+				height: 50px;
+				margin-top: 664px;
+				margin-left: 200px;
+				background: red;
+				border-radius: 0px;
+				transform: rotate(180deg);
+			
+			}
+			50%{
+				transform: rotate(180deg);
+				margin-top: 100px;
+				margin-left: 600px;
+				background: yellow;
+				border-radius:100px ;
+			}
+			100%{
+				transform: rotate(180deg);
+				margin-top: 664px;
+				margin-left: 1000px;
+				background: cyan;
+				border-radius:0px ;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="pass()">点击</button>
+		<button  onclick="reast()">重置</button>
+		<div id="a" class="a"></div>
+		<div id="s" class="aa"></div>
+		
+		<script type="text/javascript" src="js/lianxi2.js">
+			
+		</script>
+
+	</body>
+</html>

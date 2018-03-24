@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单</title>
+		<style type="text/css">
+			body{
+				background-image:url(img/u=1899771363,1676571470&fm=200&gp=0.jpg);
+				background-repeat:repeat;
+				background-attachment: scroll;
+				
+			}
+			.box{
+				background: aqua;
+				width: 400px;
+				height: 2000px;
+				border: 5px solid navajowhite;
+				margin: 0 auto;
+				text-align: left;
+				
+			}
+			h3{
+				text-align: center;
+			}
+			textarea{
+				width: 300px;
+				height: 100px;
+				resize: none;
+			}
+			.demo{
+				height: 200px;
+				width: 80%;
+				margin: 0 auto;
+				border:1px solid red;
+			}
+			p.text{
+				line-height: 30px;
+				width: 60px;
+				text-align: center;
+				position: relative;
+				top:-30px;
+				left: 60px;
+				background: aqua;
+				writing-mode: lr-tb;
+				text-decoration: underline;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+			<h3>填一天</h3>
+		<form action=""method="">
+			<p>用户名:<input type="text" placeholder="请输入用户名" /></p>
+			<p>密码:<input type="password"placeholder="请输入密码"</p>
+			<fieldset id="">
+				<legend>性别</legend>	
+				<input type="radio" name="sex" id="male" value="0" checked="checked" /><label for="male">男</lable>
+	            <input type="radio" name="sex" id="fmale" value="1" /><label for="fmale">女</label>
+	            <input type="radio" name="sex" id="secret" value="2" /><label for="secret">保密</label>
+            </fieldset>
+			<!--<p>性别：男<input type="radio" name="firstname"checked="checked"id="man" />女<input type="radio" name="firstname"checked="checked" /></p>-->
+            <fieldset>
+            	<legend>爱好</legend>
+             	篮球<input type="checkbox">
+                one球<input type="checkbox">
+                two球<input type="checkbox">
+                three球<input type="checkbox">
+            </fieldset>	
+            <fieldset>
+            	<legend>传照片吗</legend>
+            	<input type="file" name=""  value="" />
+            </fieldset>
+            <fieldset>
+            	<legend>成就</legend>
+            	<select multiple="multiple">
+            	   <option>小学</option>
+            	   <option>中学</option>
+            	   <option>大学</option>
+            	   <option selected="selected">none</option>
+                </select>
+            </fieldset>
+            <fieldset>
+            	<legend>留言</legend>
+            	<textarea></textarea>
+                <input type="date"/>
+            </fieldset>
+            <input type="hidden" value="123456" />
+            <fieldset>
+                <legend>如有疑问请使用搜索</legend> 
+            	<input type="search" placeholder="wait..."/>&nbsp<input type="button"value="baidu">
+            </fieldset>
+            <p><input type="submit"name=""value="yes"/>  <input type="reset"name=""value="重置"/></p>   		
+			<div class="demo">
+				<p class="text">hello</p>
+				
+			</div>
+		</form>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>浮动(float)与重叠</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*.header{
+				width: 200px;
+				height: 400px;
+				background: khaki;
+				border: 1px solid #fff;
+				
+			}*/
+			.test{
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin:100px 20px;
+				float: left;
+			}
+			.test1{
+				width: 100px;
+				height: 100px;
+				background: chartreuse;
+				float: right;
+			}
+			.test2{
+				/*width: 100px;*/
+				height: 100px;
+				background: aqua;
+				clear: both;
+				border-top:50px solid #fff;
+			}
+		</style>
+	</head>
+	<body><div class="header">
+		<div class="test"></div>
+		<div class="test1"></div>
+		<div class="test2"></div>
+		</div>
+	</body>
+</html>

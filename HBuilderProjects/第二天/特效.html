@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>牛批</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				/*background: #38f;*/
+			}
+			.bg{
+				width: 2000px;
+				height: 1000px;
+				
+			}
+			.fly{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				/*background: blue;*/
+                animation: mymove 5s infinite;
+                animation-timing-function: ease;
+                /*animation-direction: alternate;*/
+			}
+			.fly img{
+				width: 100px;
+			}
+			@keyframes mymove{
+				0%{left:0px ;top:800px ;}
+				/*25%{left:500px ;top:600px}
+				50%{left:800px; top:400px}
+				75%{left:1200px; top:200px}*/
+				100%{left:2000px ;top:0px}
+			}
+			.fly1{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				/*background: blue;*/
+                animation: mymove1 10s infinite;
+                animation-timing-function: ease;
+                /*animation-direction: alternate;*/
+			}
+			.fly1 img{
+				width: 100px;
+			}
+			@keyframes mymove1{
+				0%{left:400px ;top:800px;transform: scale(1,1);}
+				50%{left:400px ;top:300px;transform: scale(0,0);}
+				100%{left:400px ;top:0px;transform: scale(1,1);}
+			}
+			.fly2{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				left:400px;top:400px;
+				/*background: blue;*/
+                animation: mymove2 3s /*infinite*/ ;
+                animation-timing-function: ease;
+                animation-delay:5s;
+                /*animation-direction: alternate;*/
+			}
+			.fly2 img{
+				width: 100px;
+			}
+			@keyframes mymove2{
+              from{left: 400px;top:400px;transform: scale(0,0);}to{left: 400px;top:400px;transform: scale(3,3);}
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/timg (3).jpg" class="bg"/>
+		<div class="fly">
+			<img src="img/fly.png"/>
+		</div>
+		<div class="fly1">
+			<img src="img/28a731050e17f8ff1b501e675fb882c9.png"/>
+		</div>
+		<div class="fly2">
+			<img src="img/52066513_30.png"/>
+		</div>
+	</body>
+</html>
