@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text{
+            position: absolute;
+            background: yellow;
+            width: 500px;
+            height: 500px;
+            animation:text 3s infinite alternate;
+        }
+        @keyframes text {
+            0%{background: yellow;left: 0;top: 0;}
+            100%{background: blue;left: 1000px;border-radius: 1000px}
+        }
+    </style>
+</head>
+<body>
+    <div class="text"></div>
+</body>
+</html>
