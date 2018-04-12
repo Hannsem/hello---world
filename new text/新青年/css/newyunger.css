@@ -1,0 +1,417 @@
+*{
+            padding: 0;
+            margin: 0;
+        }
+        .topblock{
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            left: 0;
+            top:0;
+			z-index: 9999;
+        }
+        .topup{
+            background-color: #eeeeee;
+            overflow: hidden;
+        }
+        .headtop{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .topright{
+            float: right;
+        }
+        .topright a{
+            text-decoration: none;
+            color: #666666;
+            font-size: 12px;
+            line-height: 47px;
+        }
+        .lefttop{
+            float: left;
+        }
+        .lefttop a{
+            padding: 15px 5px 15px 12px;
+            background: url(img/topDot01.png) no-repeat 5px center;
+        }
+        .righttop{
+            padding-left: 5px;
+            float: left;
+        }
+        .righttop{
+		float: left;
+		padding-left: 5px;
+        }
+        .righttop a{
+        	padding: 13px 0;
+        }
+        .topdown{
+        	background-color: #2185cf;
+        	height: 50px;
+        }	
+        .headdown{
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        .downleft{
+        	float: left;
+        }
+        .downphoto{
+        	position: relative;
+        	height: 50px;
+        	width: 150px;
+        	cursor: pointer;
+        	
+        }
+        .downphoto img{
+        	position: absolute;
+        	left: 0;
+        	bottom: 0;
+        	display: block;
+        	border: 0 none;
+        	/*display: none;*/
+        }
+        .wz{
+        	
+            float: left;
+        	line-height: 50px;
+        }
+        .wz a{
+        	padding-left: 20px;
+        	background: url(img/navDidian.png) no-repeat left center;
+        	text-decoration: none;
+        	color: #FFFFFF;
+        }
+        .downright{
+        	float: right;
+        	/*border: 1px solid red;*/
+        }
+        .downright ul{
+        	list-style: none;
+        }
+        .downright ul li{
+        	float: left;
+        	padding: 12px 6px;
+        	
+        }
+        .downright ul li a{
+        	height: 26px;
+        	display: block;
+        	text-decoration: none;
+        	padding: 0 20px;
+        	font-size: 14px;
+        	color: #FFFFFF;
+        	line-height: 26px;
+        	/*border: 1px solid red;*/
+        }
+        .banbox{
+        	width: 100%;
+        	overflow: hidden;
+        	position: relative;
+        	height: 380px;
+        	display: block;
+        }
+        .banbox .hd{
+        	overflow: hidden;
+        	position: absolute;
+        	left: 50%;
+        	bottom: 10px;
+        	z-index: 1;
+        }
+        .banbox .hd ul{
+        	overflow: hidden;
+        	zoom: 1;
+        	float: left;
+        	list-style: none;
+        }
+        .banbox .hd ul li{
+        	float: left;
+        	margin: 0 3px;
+        	width: 10px;
+        	height: 10px;
+        	background: #05445a;
+        	cursor: pointer;
+        	border-radius: 50%;
+        	text-indent: 999px;
+        	overflow: hidden;
+        }
+        .banbox a{
+        	text-decoration: none;
+        }
+        .prev{
+        	position: absolute;
+        	top: 50%;
+        	width: 40px;
+        	height: 70px;
+        	background: rgba(0,0,0,.4)url(img/prev.png) center center no-repeat;
+        	border-radius: 3px;
+        	left: 50%;
+        	margin-left: -600px;
+        	margin-top: -35px;
+        	display: none;
+        }
+        .next{
+        	position: absolute;
+        	top: 50%;
+        	width: 40px;
+        	height: 70px;
+        	background: rgba(0,0,0,.4)url(img/next.png) center center no-repeat;
+        	border-radius: 3px;
+        	left: 50%;
+        	margin-top: -35px;
+        	margin-left: 560px;
+        	display: none;
+        }
+        .banbox:hover .change{
+        	display: block;
+        }
+        .INhost{
+        	/*border: 1px solid red;*/
+        	padding-top:45px;
+        	padding-bottom: 20px;
+        	background: #EEEEEE;
+        }
+        .content{
+        	/*border: 1px solid red;*/
+        	width: 1200px;
+        	margin: 0 auto;
+        	overflow: hidden;
+        }
+        .content .conleft{
+        	width: 840px;
+        	float: left;
+        	/*border:1px solid red*/
+        }
+        .content .conleft .conlefttop{
+        	line-height: 16px;
+        	padding: 20px 0;
+        	/*border: 1px solid red;*/
+        }
+        .content .conleft .conlefttop h3{
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        	font-weight: normal;
+        }
+        .content .conleft .conlefttop a{
+        	padding-right: 20px;
+        	font-size: 14px;
+        	color: #999;
+        	float: right;
+        	text-decoration: none;
+        }
+        .conleftin{
+        	margin-top:15px;
+        }
+        .conleftin ul li{
+        	/*background-color: #05445A;*/
+        	float: left;
+        	width: 260px;
+        	margin: 0 20px 20px 0;
+        	height: 290px;
+        	list-style: none;
+        }
+        .conleftin ul li a{
+        	height: 290px;
+        	background-color:#FFFFFF ;
+        	display: block;
+        }
+        .imgdiv{
+        	width: 260px;
+        	height: 173px;
+        	overflow: hidden;
+        	position: relative;
+        	background-color: #e2e2e2;
+        	
+        }
+        .img01{
+        	position: absolute;
+        	left: -30px;
+        	top: 17px;
+        	z-index: 2;
+        	display: block;
+        	width: 150px;
+        	height: 30px;
+        	font-size: 16px;
+        	background-color: #0094ff;
+        	opacity: 0.8;
+        	line-height: 30px;
+        	text-align: center;
+        	color: white;
+        	transform: rotate(-36deg);
+        }
+        .txt{
+        	padding: 0 10px;
+        }
+        .contit{
+        	padding: 5xp 0 14px 0;
+        	height: 69px;
+        }
+        .contit p{
+        	line-height: 50px;
+        	height: 50px;
+        	white-space: nowrap;
+        	overflow: hidden;
+        	text-overflow: ellipsis;
+        	font-size: 16px;
+        	color: #000;
+        }
+        .txt .add{
+        	line-height: 15px;
+        	white-space: nowrap;
+        	overflow: hidden;
+        	text-overflow: ellipsis;
+        	color: #999999;
+        	font-size: 12px;
+        }
+        .bottxt{
+        	display: block;
+        	line-height: 33px;
+        	color: #666666;
+        	font-size: 12px;
+        	overflow: hidden;
+        }
+        .bottxt p{
+        	float: left;
+        }
+        .bottxt span{
+        	float: right;
+        }
+        .conright{
+        	width: 360px;
+        	float: right;
+        	display: block;
+        }
+        .conrighttop{
+        	height: 36px;
+        	line-height: 36px;
+        	padding: 10px 0;
+        }
+        .conrighttop h3{
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        	font-weight: normal;
+        }
+        .conrighttop a{
+        	font-size: 14px;
+        	color: #999999;
+        	float: right;
+        	text-decoration: none;
+        	
+        }
+        .conrightcon{
+        	padding: 0 20px;
+        	background-color: #FFFFFF;
+        }
+        .conrightcon ul{
+        	list-style: none;
+        }
+        .conrightconli{
+        	height: 82px;
+        }
+        .conrightcon .conrightconli{
+        	padding:19px 0;
+        	border-bottom: 1px solid #e2e2e2;
+        }
+        .conrightcon a{
+        	text-decoration: none
+        }
+        .imgdiv1{
+        	width: 80px;
+        	height: 80px;
+        	overflow: hidden;
+        	float: left;
+        }
+        .imgdiv1 img{
+        	width: 100%;
+        	display: block;
+        	border: 0 none;
+        }
+        .righttxt{
+        	padding-left: 100px;
+        }
+        .txt1{
+        	height: 32px;
+        }
+        .txt1 p{
+        	line-height: 16px;
+        	font-size: 14px;
+        	color: #000;
+        }
+        .txt2{
+        	padding: 3px 0;
+        	height: 12px;
+        	line-height: 12px;
+        	margin-bottom: 12px;
+        }
+        .txt2 ol{
+        	float: left;
+        	list-style: none;
+        }
+        .txt2 li{
+        	float: left;
+        	margin-left: 3px;
+        	width: 12px;
+        	height: 12x;
+        	background:url(img/starNo.png) no-repeat;
+        }
+        .txt2 li span{
+        	width: 12px;
+        	height: 12px;
+        	display: block;
+        	background: url(img/starYes.png) no-repeat;
+        }
+        .txt2df{
+        	padding-left: 10px;
+        	font-size: 14px;
+        	color: #ff8814;
+        	float: left;
+        }
+        .txt2pj{
+        	float: right;
+        	font-size: 12px;
+        	color: #999999;
+        }
+        .txt3{
+        	line-height: 20px;
+        }
+        .txt3 span{
+        	font-size: 12px;
+        	color: #000;
+        	float: left;
+        	
+        }
+        .tjxm{
+        	background-color:#FFFFFF ;
+        }
+        .tjpx{
+        	padding-bottom: 58px;
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        .tit{
+        	padding: 23px 0;
+        	line-height: 16px;
+        	margin-bottom: 42px;
+        }
+        .tit h3{
+        	padding-right: 12px;
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        }
+        .tit a{
+        	padding-top: 2px;
+        	font-size: 14px;
+        	color: #999999;
+        	float: left;
+        	text-decoration: none;
+        }
+        .tit1{
+        	position: relative;
+        	height: 300px;
+        	background: url(img/20180330152616_332向上向善.jpg)no-repeat center 0;
+        	text-align: left;
+        	background-size: 100%;
+        }

@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>青年之声-首页</title>
+    <style type="text/css">
+    	body{
+    		background-color: #EEEEEE;
+    	}
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .topblock{
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            left: 0;
+            top:0;
+			z-index: 9999;
+        }
+        .topup{
+            background-color: #eeeeee;
+            overflow: hidden;
+        }
+        .headtop{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .topright{
+            float: right;
+        }
+        .topright a{
+            text-decoration: none;
+            color: #666666;
+            font-size: 12px;
+            line-height: 47px;
+        }
+        .lefttop{
+            float: left;
+        }
+        .lefttop a{
+            padding: 15px 5px 15px 12px;
+            background: url(img/topDot01.png) no-repeat 5px center;
+        }
+        .righttop{
+            padding-left: 5px;
+            float: left;
+        }
+        .righttop{
+		float: left;
+		padding-left: 5px;
+        }
+        .righttop a{
+        	padding: 13px 0;
+        }
+        .topdown{
+        	background-color: #2185cf;
+        	height: 50px;
+        }	
+        .headdown{
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        .downleft{
+        	float: left;
+        }
+        .downphoto{
+        	position: relative;
+        	height: 50px;
+        	width: 150px;
+        	cursor: pointer;
+        	
+        }
+        .downphoto img{
+        	position: absolute;
+        	left: 0;
+        	bottom: 0;
+        	display: block;
+        	border: 0 none;
+        	/*display: none;*/
+        }
+        .wz{
+        	
+            float: left;
+        	line-height: 50px;
+        }
+        .wz a{
+        	padding-left: 20px;
+        	background: url(img/navDidian.png) no-repeat left center;
+        	text-decoration: none;
+        	color: #FFFFFF;
+        }
+        .downright{
+        	float: right;
+        	/*border: 1px solid red;*/
+        }
+        .downright ul{
+        	list-style: none;
+        }
+        .downright ul li{
+        	float: left;
+        	padding: 12px 6px;
+        	
+        }
+        .downright ul li a{
+        	height: 26px;
+        	display: block;
+        	text-decoration: none;
+        	padding: 0 20px;
+        	font-size: 14px;
+        	color: #FFFFFF;
+        	line-height: 26px;
+        	/*border: 1px solid red;*/
+        }
+        .banbox{
+        	width: 100%;
+        	overflow: hidden;
+        	position: relative;
+        	height: 380px;
+        	display: block;
+        }
+        .banbox .hd{
+        	overflow: hidden;
+        	position: absolute;
+        	left: 50%;
+        	bottom: 10px;
+        	z-index: 1;
+        }
+        .banbox .hd ul{
+        	overflow: hidden;
+        	zoom: 1;
+        	float: left;
+        	list-style: none;
+        }
+        .banbox .hd ul li{
+        	float: left;
+        	margin: 0 3px;
+        	width: 10px;
+        	height: 10px;
+        	background: #05445a;
+        	cursor: pointer;
+        	border-radius: 50%;
+        	text-indent: 999px;
+        	overflow: hidden;
+        }
+        .banbox a{
+        	text-decoration: none;
+        }
+        .prev{
+        	position: absolute;
+        	top: 50%;
+        	width: 40px;
+        	height: 70px;
+        	background: rgba(0,0,0,.4)url(img/prev.png) center center no-repeat;
+        	border-radius: 3px;
+        	left: 50%;
+        	margin-left: -600px;
+        	margin-top: -35px;
+        	display: none;
+        }
+        .next{
+        	position: absolute;
+        	top: 50%;
+        	width: 40px;
+        	height: 70px;
+        	background: rgba(0,0,0,.4)url(img/next.png) center center no-repeat;
+        	border-radius: 3px;
+        	left: 50%;
+        	margin-top: -35px;
+        	margin-left: 560px;
+        	display: none;
+        }
+        .banbox:hover .change{
+        	display: block;
+        }
+        .INhost{
+        	/*border: 1px solid red;*/
+        	padding-top:45px;
+        	padding-bottom: 20px;
+        	background: #EEEEEE;
+        }
+        .content{
+        	/*border: 1px solid red;*/
+        	width: 1200px;
+        	margin: 0 auto;
+        	overflow: hidden;
+        }
+        .content .conleft{
+        	width: 840px;
+        	float: left;
+        	/*border:1px solid red*/
+        }
+        .content .conleft .conlefttop{
+        	line-height: 16px;
+        	padding: 20px 0;
+        	/*border: 1px solid red;*/
+        }
+        .content .conleft .conlefttop h3{
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        	font-weight: normal;
+        }
+        .content .conleft .conlefttop a{
+        	padding-right: 20px;
+        	font-size: 14px;
+        	color: #999;
+        	float: right;
+        	text-decoration: none;
+        }
+        .conleftin{
+        	margin-top:15px;
+        }
+        .conleftin ul li{
+        	/*background-color: #05445A;*/
+        	float: left;
+        	width: 260px;
+        	margin: 0 20px 20px 0;
+        	height: 290px;
+        	list-style: none;
+        }
+        .conleftin ul li a{
+        	height: 290px;
+        	background-color:#FFFFFF ;
+        	display: block;
+        }
+        .imgdiv{
+        	width: 260px;
+        	height: 173px;
+        	overflow: hidden;
+        	position: relative;
+        	background-color: #e2e2e2;
+        	
+        }
+        .img01{
+        	position: absolute;
+        	left: -30px;
+        	top: 17px;
+        	z-index: 2;
+        	display: block;
+        	width: 150px;
+        	height: 30px;
+        	font-size: 16px;
+        	background-color: #0094ff;
+        	opacity: 0.8;
+        	line-height: 30px;
+        	text-align: center;
+        	color: white;
+        	transform: rotate(-36deg);
+        }
+        .txt{
+        	padding: 0 10px;
+        }
+        .contit{
+        	padding: 5xp 0 14px 0;
+        	height: 69px;
+        }
+        .contit p{
+        	line-height: 50px;
+        	height: 50px;
+        	white-space: nowrap;
+        	overflow: hidden;
+        	text-overflow: ellipsis;
+        	font-size: 16px;
+        	color: #000;
+        }
+        .txt .add{
+        	line-height: 15px;
+        	white-space: nowrap;
+        	overflow: hidden;
+        	text-overflow: ellipsis;
+        	color: #999999;
+        	font-size: 12px;
+        }
+        .bottxt{
+        	display: block;
+        	line-height: 33px;
+        	color: #666666;
+        	font-size: 12px;
+        	overflow: hidden;
+        }
+        .bottxt p{
+        	float: left;
+        }
+        .bottxt span{
+        	float: right;
+        }
+        .conright{
+        	width: 360px;
+        	float: right;
+        	display: block;
+        }
+        .conrighttop{
+        	height: 36px;
+        	line-height: 36px;
+        	padding: 10px 0;
+        }
+        .conrighttop h3{
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        	font-weight: normal;
+        }
+        .conrighttop a{
+        	font-size: 14px;
+        	color: #999999;
+        	float: right;
+        	text-decoration: none;
+        	
+        }
+        .conrightcon{
+        	padding: 0 20px;
+        	background-color: #FFFFFF;
+        }
+        .conrightcon ul{
+        	list-style: none;
+        }
+        .conrightconli{
+        	height: 82px;
+        }
+        .conrightcon .conrightconli{
+        	padding:19px 0;
+        	border-bottom: 1px solid #e2e2e2;
+        }
+        .conrightcon a{
+        	text-decoration: none
+        }
+        .imgdiv1{
+        	width: 80px;
+        	height: 80px;
+        	overflow: hidden;
+        	float: left;
+        }
+        .imgdiv1 img{
+        	width: 100%;
+        	display: block;
+        	border: 0 none;
+        }
+        .righttxt{
+        	padding-left: 100px;
+        }
+        .txt1{
+        	height: 32px;
+        }
+        .txt1 p{
+        	line-height: 16px;
+        	font-size: 14px;
+        	color: #000;
+        }
+        .txt2{
+        	padding: 3px 0;
+        	height: 12px;
+        	line-height: 12px;
+        	margin-bottom: 12px;
+        }
+        .txt2 ol{
+        	float: left;
+        	list-style: none;
+        }
+        .txt2 li{
+        	float: left;
+        	margin-left: 3px;
+        	width: 12px;
+        	height: 12x;
+        	background:url(img/starNo.png) no-repeat;
+        }
+        .txt2 li span{
+        	width: 12px;
+        	height: 12px;
+        	display: block;
+        	background: url(img/starYes.png) no-repeat;
+        }
+        .txt2df{
+        	padding-left: 10px;
+        	font-size: 14px;
+        	color: #ff8814;
+        	float: left;
+        }
+        .txt2pj{
+        	float: right;
+        	font-size: 12px;
+        	color: #999999;
+        }
+        .txt3{
+        	line-height: 20px;
+        }
+        .txt3 span{
+        	font-size: 12px;
+        	color: #000;
+        	float: left;
+        	
+        }
+        .tjxm{
+        	background-color:#FFFFFF ;
+        }
+        .tjpx{
+        	padding-bottom: 58px;
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        .tit{
+        	padding: 23px 0;
+        	line-height: 16px;
+        	margin-bottom: 42px;
+        }
+        .tit h3{
+        	padding-right: 12px;
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        }
+        .tit a{
+        	padding-top: 2px;
+        	font-size: 14px;
+        	color: #999999;
+        	float: left;
+        	text-decoration: none;
+        }
+        .tit1{
+        	position: relative;
+        	height: 300px;
+        	background: url(img/20180330152616_332向上向善.jpg)no-repeat center 0;
+        	text-align: left;
+        	background-size: 100%;
+        }
+        .wdbk{
+        	padding-top: 45px;
+        	padding-bottom: 20px;
+        }
+        .wdbkpx{
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        .leftwdbk{
+        	width: 820px;
+        	float: left;
+        }
+        .leftwdbktop{
+        	line-height: 16px;
+        	padding: 20px 0;
+        	margin-bottom: 15px;
+        }
+        .rmwd{
+        	padding: 0 10px;
+        	margin-right: 17px;
+        	cursor: pointer;
+        	font-weight: bold;
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        }
+        .jhwd{
+        	padding: 0 10px;
+        	margin-right: 17px;
+        	cursor: pointer;
+        	font-weight: bold;
+        	font-size: 16px;
+        	color: #333;
+        	float: left;
+        }
+        .leftwdbka{
+        	float: right;
+        	font-size: 14px;
+        	color: #999999;
+        	text-decoration: none;
+        }
+        .leftwdbkin{
+        	padding-bottom: 37px;
+        	background-color: #FFFFFF;
+        }
+        .wdbkbox{
+        	display: block;
+        	padding: 0 20px;
+        	color: #666666;
+        	text-decoration: none;
+        	/*height: 162px;*/
+        }
+        .leftwdbkin1{
+        	padding-top:20px;
+        	border-bottom: 1px solid #E2E2E2;
+        }
+        .wdbkinimg{
+        	width: 80px;
+        	height: 80px;
+        	line-height: 80px;
+        	font-size: 0;
+        	background: #f0f0f0;
+        	text-align: center;
+        	overflow: hidden;
+        	float: left;
+        }
+        .wdbkinimg img{
+			max-width: 100%;
+			max-height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+			border: 0 none;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+        }
+        .wdbktxt{
+        	padding-left: 110px;
+        	
+        }
+        .wdbktxth3{
+        	line-height: 22px;
+        	margin-bottom: 8px;
+        	font-weight: bold;
+        	height: 45px;
+        	overflow: hidden;
+        	text-overflow: ellipsis;
+        	white-space: nowrap;
+        	font-size: 16px;
+        	color: #2185CF;
+        }
+        .wdbktxt1{
+        	color: #000;
+        	height: 35px;
+        	line-height: 35px;
+        	overflow: hidden;
+        	text-overflow: ellipsis;
+        	white-space: nowrap;
+        	font-size: 12px;
+        }
+        .wdbktxt2{
+        	height: 17px;
+        	padding: 18px 0;
+        }
+        .wdbkttxt21{
+        	float: left;
+        }
+        .span1{
+        	padding-right: 14px;
+        	color: #999999;
+        	border-right: 1px solid #E2E2E2;
+        	font-size: 12px;
+        }
+        .span2{
+        	padding-left: 15px;
+        	padding-right: 10px;
+        	color: #2185CF;
+        	font-size: 12px;
+        }
+        .span3{
+        	color: #999999;
+        	font-size: 12px;
+        }
+        .wdbkttxtright{
+        	background:url(img/pinglunIcon.png) left center no-repeat;
+        	padding-left: 18px;
+        	color: #333;
+        	float: right;
+        	font-size: 12px;
+        }
+        .rightwdbk{
+        	width: 360px;
+        	float: right;
+        	font-size: 12px;
+        }
+        .rightwdbktop{
+        	line-height: 16px;
+        	padding: 20px 0;
+        	margin-bottom: 15px;
+        }
+        .hyzz{
+        	padding: 0 10px;
+        	margin-right: 17px;
+        	cursor: pointer;
+        	font-weight: normal;
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        }
+        .rightwdbka{
+        	float: right;
+        	font-size: 14px;
+        	color: #999999;
+        	text-decoration: none;
+        }
+        .rightwdbkin{
+        	padding: 0 20px;
+        	background: #fff;
+        }
+        .rightwdbkul{
+        	list-style: none;
+        }
+        .rightwdbkli{
+        	padding: 19px 0;
+        	cursor: pointer;
+        	position: relative;
+        	border-bottom:1px solid #E2E2E2 ;
+        }
+        .rightwdbklia{
+        	text-decoration: none;
+        }
+        .rightwdbkimg{
+        	width: 80px;
+        	height: 80px;
+        	overflow: hidden;
+        	float: left;
+        }
+        .rightwdbkimg img{
+        	width: 80px;
+        	height: 80px;
+        	display: block;
+        	border: 0 none;
+        }
+        .rightwdbktxt{
+        	padding-left: 100px;
+        }
+        .rightwdbktxt1{
+        	height: 32px;
+        }
+        .rightwdbktxt1p{
+        	line-height: 16px;
+        	font-size: 14px;
+        	color: #000;
+        }
+        .rightwdbktxt2{
+        	margin-bottom: 15px;
+        	line-height: 15px;
+        	color: #666666;
+        }
+        .rightwdbka2{
+        	background-color: #2185CF;
+        	padding: 0 12px;
+        	border-radius:4px;
+        	line-height: 20px;
+        	right: 0;
+        	bottom: 20px;
+        	height: 20px;
+        	position: absolute;
+        	color: #FFFFFF;
+        	float: left;
+        	text-decoration: none;
+        }
+        .kbox{
+        	line-height: 20px;
+        		content: '';
+			height: 0;
+			line-height: 0;
+			visibility: hidden;
+			display: block;
+			clear: both;
+        }
+        .tjzj{
+        	overflow: hidden;
+        	background-color: #FFFFFF;
+        	font-size: 12px;
+        	color: #333333;
+        	height: 416px;
+        }
+        .tjzjpx{
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        .tjzjtop{
+        	padding: 23px 0;
+        	line-height: 16px;
+        }
+        .tjzjtoph3{
+        	padding-right: 12px;
+        	font-size: 16px;
+        	color: #2185CF;
+        	float: left;
+        }
+        .tjzjtopa{
+        	text-decoration: none;
+        	padding-top: 2px;
+        	font-size: 14px;
+        	color: #999999;
+        	float: left;
+        }
+        .tjzjin{
+        	padding-top: 38px;
+        	padding-bottom: 56px;
+        	height: 370px;
+        }
+      	.tjzjinboxwhat{
+      		/*background-color: yellow;*/
+      		width: 100%;
+      		margin: 0 auto;
+      		position: relative;
+      		height: 276px;
+      	}
+      	.tjzjinboxphoto{
+      		/*background-color: brown;*/
+      		width: 1092px;
+      		margin: 0 auto;
+      		height: 276px;
+      	}
+      	.prev{
+			position: absolute;
+			display: block;
+			width: 24px;
+			height: 44px;
+			background: url(img/proPrev.png) no-repeat;
+			left: 0;
+			top: 50%;
+			margin-top: -22px;
+			cursor: pointer;
+      	}
+      	.next{
+      		left: auto;
+      		right: 0;
+      		background: url(img/proNext.png);
+      		position: absolute;
+			display: block;
+			width: 24px;
+			height: 44px;
+			top: 50%;
+			margin-top: -22px;
+			cursor: pointer;
+      	}
+      	.tjzjinli{
+      		float: left;
+      		width: 162px;
+      		padding: 0 10px;
+      	}
+      	.tjzjinlia{
+      		border: 1px solid #E2E2E2;
+      		border-radius: 4px;
+      		width: 160px;
+      		height: 274px;
+      		display: block;
+      		text-align: center;
+      		text-decoration: none;
+      	}
+      	.tjzjinliadiv{
+      		padding-top: 10px;
+      	}
+      	.tjzjinliaimg{
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			overflow: hidden;
+			border: 3px solid #5faee9;
+			margin: 0 auto;
+      	}
+      	.tjzjinliaimg1{
+      		max-height: 100%;
+      		max-width: 100%;
+      		border: 0 none;
+      	}
+      	.tjzjinliah2{
+      		line-height: 40px;
+      		font-size: 16px;
+      		color: #000;
+      	}
+      	.tjzjinliap{
+      		line-height: 25px;
+      		height: 50px;
+      		overflow: hidden;
+      		color: #666;
+      	}
+      	.tjzjinliatw{
+      		border-radius: 4px;
+      		line-height: 20px;
+      		margin: 0 auto;
+      		background-color: #228ad7;
+      		color: #FFFFFF;
+      		border: 0 none;
+      	}
+      	.helpcenter{
+      		padding-top:45px;
+      		padding-bottom: 20px;
+      		font-size: 12px;
+      	}
+      	.helpcenterpx{
+      		width: 1200px;
+      		margin: 0 auto;
+      	}
+      	.helpcenterleft{
+      		width: 820px;
+      		float: left;
+      	}
+      	.helpcenterlefttop{
+      		padding: 0 16px;
+      	}
+      	.helpcenterlefttoptit{
+      		width: 100%;
+      		line-height: 16px;
+      		padding: 20px 0;
+      	}
+      	.helpcentertoptith31{
+      		border-left: 4px solid #2185CF;
+      		padding: 0 10px;
+      		margin-right: 17px;
+      		cursor: pointer;
+      		font-weight: bold;
+      		font-size: 16px;
+      		color: #2185CF;
+      		float: left;
+      	}
+      	.helpcentertoptith32{
+      		padding: 0 10px;
+      		margin-right: 17px;
+      		cursor: pointer;
+      		font-weight: bold;
+      		font-size: 16px;
+      		float: left;
+      	}
+      	.helpcentertoptita{
+      		font-size: 14px;
+      		color: #999;
+      		float: right;
+      		text-decoration: none;
+      	}
+      	.helpcenterin{
+      		margin-top: 15px;
+      	}
+      	.helpcenterinuldiv{
+      		background-color: #FFFFFF;
+      	}
+      	.helpcenterinuldiva{
+      		padding: 0 20px;
+      		display: block;
+      		text-decoration: none;
+      		color: #666666;
+      	}
+      	.helpcenterinitem{
+      		padding: 20px 0;
+      		border-bottom: 1px solid #E2E2E2;
+      		height: 150px;
+      	}
+      	.helpcenterinitemimg{
+      		width: 210px;
+      		height: 140px;
+      		line-height: 140px;
+      		text-align: center;
+      		font-size: 0;
+      		background: #F0F0F0;
+      		overflow: hidden;
+      		float: left;
+      	}
+      	.helpcenterinitemimgin{
+      		max-height: 100%;
+      		max-width: 100%;
+      		display: inline;
+      		vertical-align: middle;
+      		border: 0 none;
+      	}
+      	.helpcenterlefttxt{
+      		padding-left: 230px;
+      		color: #666;
+      	}
+      	.helpcenterlefttxttop{
+      		line-height: 20px;
+      		height: 20px;
+      		margin-bottom: 14px;
+      	}
+      	.helpcenterlefttxttopspan{
+      		background:#ff8400 url(img/qzzIcon.png) right center no-repeat;
+      		width: 70px;
+      		height: 20px;
+      		text-align: center;
+      		line-height: 20px;
+      		color: #FFFFFF;
+      		float: left;
+      	}
+      	.helpcenterlefttxttoph3{
+      		padding-left: 10px;
+      		font-size: 16px;
+      		color: #000;
+      		float: left;
+      	}
+      	.helpcenterlefttxtlong{
+      		line-height: 22px;
+      		height: 44px;
+      		overflow: hidden;
+      		color: #999999;
+      	}
+      	.helpcenterlefttxtmiddle{
+      		line-height: 12px;
+      		padding: 17px 0;
+      		color: #000;
+      	}
+      	.helpcenterlefttxtmiddleleft{
+      		padding-right: 14px;
+      		border-right: 1px solid #E2E2E2;
+      		line-height: 12px;
+      		color: #000000;
+      	}
+      	.helpcenterlefttxtmiddleright{
+      		padding-left: 14px;
+      		line-height: 12px;
+      		color: #000000;
+      	}
+      	.helpcenterlefttxtbottom{
+      		padding: 2px 0;
+      		line-height: 12px;
+      		color: #000000;
+      	}
+      	.helpcenterlefttxtbottomspan1{
+      		background: url(img/pinglunIcon.png) left center no-repeat;
+      		padding-left: 16px;
+      		margin-right: 15px;
+      		float: left;
+      	}
+      	.helpcenterlefttxtbottomspan2{
+      		float: left;
+      	}
+      	.helpcenterlefttxtbottombu{
+      		padding: 0 8px;
+      		line-height: 20px;
+      		border-radius: 4px;
+      		background-color:#2185CF;
+      		color: #FFFFFF;
+      		float: right;
+      		border: 0 none;
+      	}
+      	.helpcenterright{
+      		width: 360px;
+      		float: right;
+      		font-size: 12px;
+      		color: #333333;
+      	}
+      	.helpcenterrighttop{
+      		padding: 20px 0;
+      		line-height: 16px;
+      	}
+      	.helpcenterrighttoph3{
+      		border-left: 4px solid #2185CF;
+      		padding-left: 10px;
+      		font-size: 16px;
+      		color: #2185CF;
+      		float: left;
+      		font-weight: normal;
+      	}
+      	.helpcenterrighttopa{
+      		font-size: 14px;
+      		color: #999;
+      		float: right;
+      		text-decoration: none;
+      	}
+      	.helpcenterrightin{
+      		margin-bottom: 25px;
+      		min-height: 726px;
+      		padding: 0 20px;
+      		background-color: #FFFFFF;
+      		font-size: 12px;
+      		color: #333333;
+      		margin-top: 15px;
+      	}
+      	.helpcenterrightinli{
+      		height: 82px;
+      		padding: 19px 0;
+      		cursor: pointer;
+      		border-bottom: 1px solid #E2E2E2;
+      	}
+      	.helpcenterrightinli a{
+      		text-decoration: none;
+      	}
+      	.helpcenterrightinimg{
+      		width: 80px;
+      		height: 80px;
+      		overflow: hidden;
+      		float: left;
+      	}
+      	.helpcenterrightinimg img{
+      		width: 100%;
+      		display: block;
+      		border: 0 none;
+      	}
+      	.helpcenterrightintxt{
+      		padding-left: 100px;
+      	}
+      	.helpcenterrightintxta{
+      		text-decoration: none;
+      	}
+      	.helpcenterrightintxta1{
+      		height: 32px;
+      	}
+      	.helpcenterrightintxta1p{
+      		padding: 0;
+      		line-height: 16px;
+      		font-size: 14px;
+      		color: #000;
+      	}
+      	.helpcenterrightintxta2{
+      		padding: 3px 0;
+      		height: 12px;
+      		line-height: 12px;
+      		margin-bottom: 12px;
+      	}
+      	.helpcenterrightintxta2span1{
+      		padding-left: 10px;
+      		font-size: 14px;
+      		color: #ff8814;
+      		float: left;
+      		line-height: 12px;
+      	}
+      	.helpcenterrightintxta2span2{
+      		float: right;
+      		font-size: 12px;
+      		color: #999999;
+      		line-height: 12px;
+      	}
+      	.helpcenterrightintxtdown{
+      		line-height: 20px;
+      	}
+      	.helpcenterrightintxtdown a{
+      		text-decoration: none;
+      	}
+      	.helpcenterrightintxtdownspan{
+      		font-size: 12px;
+      		color: #000000;
+      		float: left;
+      		
+      	}
+      	.helpcenterrightintxtdowna{
+      		color: #000;
+      		display: block;
+      		float: right;
+      	}
+      	.helpcenterrightbutton{
+      		border: 1px solid #E2E2E2;
+      		overflow: hidden;
+      	}
+      	.helpcenterrightbutton a{
+      		background-color: #FFFFFF!important;
+      		text-decoration: none;
+      		display: block;
+      		width: 118px;
+      		height: 166px;
+      		float: left;
+      		background: url(img/jiuyeshixi.png) center center no-repeat;
+      	}
+      	.helpcenterrightbutton1{
+      		
+      		border-right: 1px solid #e2e2e2;
+      	}
+      	.helpcenterrightbutton2{
+      		border-right: 1px solid #e2e2e2;
+      		
+      	}
+      	.xxfw{
+      		/*border: 1px solid red;*/
+      		font-size: 12px;
+      		color: #333333;
+      	}
+      	.xxfwpx{
+      		overflow: hidden;
+      		width: 1200px;
+      		margin: 0 auto;
+      	}
+      	.xxfwtop{
+      		line-height: 16px;
+      		padding: 20px 0;
+      	}
+      	.xxfwtoph3{
+      		font-size: 16px;
+      		color: #2185CF;
+      		font-weight: normal;
+      	}
+      	.map{
+      		position: relative;
+      		margin-bottom: 40px;
+      		display: block;
+      	}
+      	.maptext{
+      		text-decoration: none;
+      		padding: 0 16px;
+      		line-height: 28px;
+      		border-radius:14px;
+      		position: absolute;
+      		background-color: #139de4;
+      		right: 10px;
+      		bottom: 10px;
+      		background-image: -webkit-linear-gradient( 90deg, rgb(17,145,211) 0%, rgb(21,167,243) 100%);
+      		color: #FFFFFF
+      	}
+      	.mapimg{
+      		display: block;
+      		border: 0 none;
+      	}
+      	.sorlltop{
+      		width: 40px;
+      		height: 40px;
+      		position: fixed;
+      		bottom: 120px;
+      		right: 20px;
+      	}
+      	.sorlltopimg{
+      		display: block;
+      		width: 100%;
+      		height: 40px;
+      		vertical-align: middle;
+      		border: 0 none;
+      	}
+      	.layer{
+      		right: 1px;
+      		position: fixed;
+      		top: 50%;
+      		height: 130px;
+      		margin-top: -65px;
+      		width: auto;
+      		background-color: #62a8ea;
+      		border-radius:14px;
+      		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.25);
+      	}
+      	.layerimg{
+      		width: 28px;
+      		height: auto;
+      		display: block;
+      		overflow: hidden;
+      		border: 0 none;
+      	}
+      	.footer{
+      		font-size: 14px;
+      		background-color: #2185CF;
+      		color: #FFFFFF;
+      		padding: 20px 0;
+      		text-align: center;
+      	}
+      	.footernice{
+      		width: 100%;
+      		line-height: 28px;
+      	}
+      	.footercent{
+      		width: 600px;
+      		height: 100px;
+      		margin: 0 auto;
+      		overflow: hidden;
+      	}
+      	.footercent-left{
+      		width: 80px;
+      		height: 80px;
+      		float: left;
+      		margin-top: 5px;
+      	}
+      	.footercent-left-img{
+      		width: 70px;
+      		margin: 0 auto;
+      		text-decoration: none;
+      	}
+      	.footercent-right{
+      		margin-top: 5px;
+      		width: 470px;
+      		height: 100px;
+      		float: left;
+      		text-align: center;
+      		line-height: 20px;
+      	}
+    </style>
+</head>
+<body>
+    <div class="topblock">
+        <div class="topup">
+            <header class="headtop">
+                <div class="topright">
+                    <div class="lefttop">
+                        <a href="/">中国青年之声</a>
+                        <a href="/" style="background: url(img/topDot02.png)no-repeat 5px center;">i 志愿</a>
+                        <a href="/" style="background: url(img/topDot03.png)no-repeat 5px center;">展翅网</a>
+                        <a href="/" style="background: url(img/topDot04.png)no-repeat 5px center;">粤团聚</a>
+                    </div>
+                    <div class="righttop">
+                        <a style="padding-left: 40px;background: url(img/20171012151942_68hotline.png)no-repeat;background-size: 15px 15px;background-position: 20px 15px;"><span>青少年服务热线</span><span style="color: #12b7f5;">：12355</span></a>
+                        <a href="/" style="border-right: 1px solid #e2e2e2;padding: 2px 10px;">注册</a>
+                        <a href="/" style="border-right: 1px solid #e2e2e2;padding: 2px 10px;">登录</a>
+                        <a href="/">我要吐槽</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="topdown">
+        	<div class="headdown">
+        		<div class="downleft">
+        			<div class="downphoto">
+        				<img src="img/bigLogo.png"/>
+        			</div>       		
+        		</div>
+        		<div class="wz">
+        				<a href="/">成都</a>		
+        		</div>
+        	 
+        		<div class="downright">
+        			<ul>
+        				<li><a href="/" style="background-color: #3cc1ff;border-radius: 13px;">首页</a></li>
+        				<li><a href="/">找活动</a></li>
+        				<li><a href="/">找咨询</a></li>
+        				<li><a href="/">找帮助</a></li>
+        				<li><a href="/">重磅项目</a></li>
+        				<li><a href="/">青年之家</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+    </div>
+	<div style="margin-top: 97px;">
+    <div class="banbox">
+    	<div class="hd">
+    		<ul>
+    			<li style="background: #0094ff;"></li>
+    			<li></li>
+    			<li></li>
+    			<li></li>
+    		</ul>
+    	</div>
+    	<div class="hdphoto" >
+    		<img src="img/20170905165656_76620170725104011_244青年之声4-new.jpg" />
+    	</div>
+    	<a href="/" class="prev change"></a>
+    	<a href="/" class="next change"></a>
+    </div>
+    <div class="INhost">
+    	<div class="content">
+    		<div class="conleft">
+    			<div class="conlefttop">
+    				<h3>推荐活动</h3>
+    				<a href="/">More></a>
+    			</div>
+    			<div class="conleftin">
+    				<ul>
+    					<li>
+    						<a href="/" style="text-decoration: none;">
+    							<div class="imgdiv">
+    								<span class="img01">报名中</span>
+    								<img class="imgurl" src="img/20180409113102_814shoutu.jpg" width='100%'height='100%'/>
+    							</div>
+    							<div class="txt">
+    								<div class="contit">
+    									<p>“碧桂园杯”粤港澳青年南沙新...</p>
+    								</div>
+    								<p class="add">广州市南沙区大岗镇十八罗汉山森林公园 ...</p>
+    								<div class="bottxt">
+    									<p>2018.5.5--2018.5.5</p>
+    									<span style="color: #3ebb2b;">运动</span>
+    								</div>
+    							</div>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="/" style="text-decoration: none;">
+    							<div class="imgdiv">
+    								<span class="img01">报名中</span>
+    								<img class="imgurl" src="img/20180409113102_814shoutu.jpg" width='100%'height='100%'/>
+    							</div>
+    							<div class="txt">
+    								<div class="contit">
+    									<p>“碧桂园杯”粤港澳青年南沙新...</p>
+    								</div>
+    								<p class="add">广州市南沙区大岗镇十八罗汉山森林公园 ...</p>
+    								<div class="bottxt">
+    									<p>2018.5.5--2018.5.5</p>
+    									<span style="color: #3ebb2b;">运动</span>
+    								</div>
+    							</div>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="/" style="text-decoration: none;">
+    							<div class="imgdiv">
+    								<span class="img01">报名中</span>
+    								<img class="imgurl" src="img/20180409113102_814shoutu.jpg" width='100%'height='100%'/>
+    							</div>
+    							<div class="txt">
+    								<div class="contit">
+    									<p>“碧桂园杯”粤港澳青年南沙新...</p>
+    								</div>
+    								<p class="add">广州市南沙区大岗镇十八罗汉山森林公园 ...</p>
+    								<div class="bottxt">
+    									<p>2018.5.5--2018.5.5</p>
+    									<span style="color: #3ebb2b;">运动</span>
+    								</div>
+    							</div>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="/" style="text-decoration: none;">
+    							<div class="imgdiv">
+    								<span class="img01">报名中</span>
+    								<img class="imgurl" src="img/20180409113102_814shoutu.jpg" width='100%'height='100%'/>
+    							</div>
+    							<div class="txt">
+    								<div class="contit">
+    									<p>“碧桂园杯”粤港澳青年南沙新...</p>
+    								</div>
+    								<p class="add">广州市南沙区大岗镇十八罗汉山森林公园 ...</p>
+    								<div class="bottxt">
+    									<p>2018.5.5--2018.5.5</p>
+    									<span style="color: #3ebb2b;">运动</span>
+    								</div>
+    							</div>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="/" style="text-decoration: none;">
+    							<div class="imgdiv">
+    								<span class="img01">报名中</span>
+    								<img class="imgurl" src="img/20180409113102_814shoutu.jpg" width='100%'height='100%'/>
+    							</div>
+    							<div class="txt">
+    								<div class="contit">
+    									<p>“碧桂园杯”粤港澳青年南沙新...</p>
+    								</div>
+    								<p class="add">广州市南沙区大岗镇十八罗汉山森林公园 ...</p>
+    								<div class="bottxt">
+    									<p>2018.5.5--2018.5.5</p>
+    									<span style="color: #3ebb2b;">运动</span>
+    								</div>
+    							</div>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="/" style="text-decoration: none;">
+    							<div class="imgdiv">
+    								<span class="img01">报名中</span>
+    								<img class="imgurl" src="img/20180409113102_814shoutu.jpg" width='100%'height='100%'/>
+    							</div>
+    							<div class="txt">
+    								<div class="contit">
+    									<p>“碧桂园杯”粤港澳青年南沙新...</p>
+    								</div>
+    								<p class="add">广州市南沙区大岗镇十八罗汉山森林公园 ...</p>
+    								<div class="bottxt">
+    									<p>2018.5.5--2018.5.5</p>
+    									<span style="color: #3ebb2b;">运动</span>
+    								</div>
+    							</div>
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="conright">
+    			<div class="conrighttop">
+    				<h3>人气主办方</h3>
+    				<a href="/">More></a>
+    			</div>
+    			<div class="conrightcon">
+    				<ul>
+    					<li class="conrightconli"><a href="/">
+    						<div class="imgdiv1">
+    							<img src="img/20170109171616_8051.jpg"/>
+    						</div>
+    						<div class="righttxt">
+    							<div class="txt1"><p>广东共青团</p></div>
+    							<div class="txt2">
+    								<ol>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    								</ol>
+    								<span class="txt2df">4.6分</span>
+    								<span class="txt2pj">161人已评</span>
+    							</div>
+    							<div class="txt3">
+    								<span>14332人关注</span>
+    							</div>
+    						</div>
+    					</a></li>
+    					<li class="conrightconli"><a href="/">
+    						<div class="imgdiv1">
+    							<img src="img/20170109171616_8051.jpg"/>
+    						</div>
+    						<div class="righttxt">
+    							<div class="txt1"><p>广东共青团</p></div>
+    							<div class="txt2">
+    								<ol>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    								</ol>
+    								<span class="txt2df">4.6分</span>
+    								<span class="txt2pj">161人已评</span>
+    							</div>
+    							<div class="txt3">
+    								<span>14332人关注</span>
+    							</div>
+    						</div>
+    					</a></li>
+    					<li class="conrightconli"><a href="/">
+    						<div class="imgdiv1">
+    							<img src="img/20170109171616_8051.jpg"/>
+    						</div>
+    						<div class="righttxt">
+    							<div class="txt1"><p>广东共青团</p></div>
+    							<div class="txt2">
+    								<ol>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    								</ol>
+    								<span class="txt2df">4.6分</span>
+    								<span class="txt2pj">161人已评</span>
+    							</div>
+    							<div class="txt3">
+    								<span>14332人关注</span>
+    							</div>
+    						</div>
+    					</a></li>
+    					<li class="conrightconli"><a href="/">
+    						<div class="imgdiv1">
+    							<img src="img/20170109171616_8051.jpg"/>
+    						</div>
+    						<div class="righttxt">
+    							<div class="txt1"><p>广东共青团</p></div>
+    							<div class="txt2">
+    								<ol>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    								</ol>
+    								<span class="txt2df">4.6分</span>
+    								<span class="txt2pj">161人已评</span>
+    							</div>
+    							<div class="txt3">
+    								<span>14332人关注</span>
+    							</div>
+    						</div>
+    					</a></li>
+    					<li class="conrightconli"><a href="/">
+    						<div class="imgdiv1">
+    							<img src="img/20170109171616_8051.jpg"/>
+    						</div>
+    						<div class="righttxt">
+    							<div class="txt1"><p>广东共青团</p></div>
+    							<div class="txt2">
+    								<ol>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    									<li><span></span></li>
+    								</ol>
+    								<span class="txt2df">4.6分</span>
+    								<span class="txt2pj">161人已评</span>
+    							</div>
+    							<div class="txt3">
+    								<span>14332人关注</span>
+    							</div>
+    						</div>
+    					</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="tjxm">
+    	<div class="tjpx">
+    		<div class="tit">
+    			<h3>推荐项目</h3>
+    			<a href="/">More></a>
+    		</div>
+    		<div class="tit1">
+    			
+    		</div>
+    	</div>
+    </div>
+	</div>
+	<div class="wdbk" style="overflow: hidden;">
+		<div class="wdbkpx">
+			<div class="leftwdbk">
+				<div class="leftwdbktop">
+					<h3 class="rmwd">热门问答</h3>
+					<h3 class="jhwd">精华问答</h3>
+					<a href="/" class="leftwdbka">more></a>
+				</div>
+				<div class="leftwdbkin">
+					<a href="/" class="wdbkbox">
+						<div class="leftwdbkin1">
+							<div class="wdbkinimg">
+								<img src="img/20170725170813_2461.jpg"/>
+							</div>
+							<div class="wdbktxt">
+								<h3 class="wdbktxth3">你吃过最令人感动的方便食品或小吃是什么？</h3>
+								<div class="wdbktxt1">包括但不限于方便面，自煮火锅，速成粥。 或者其他在路途上的干粮，比如新疆的馕配酸奶。</div>
+								<div class="wdbktxt2">
+									<div class="wdbkttxt21">
+										<span class="wdbkttxt21 span1">青年情感</span>
+										<span class="wdbkttxt21 span2">情感</span>
+										<span class="wdbkttxt21 span3">2018-04-05 10:10:00</span>
+									</div>
+								<span class="wdbkttxtright">133</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="/" class="wdbkbox">
+						<div class="leftwdbkin1">
+							<div class="wdbkinimg">
+								<img src="img/20170725170813_2461.jpg"/>
+							</div>
+							<div class="wdbktxt">
+								<h3 class="wdbktxth3">你吃过最令人感动的方便食品或小吃是什么？</h3>
+								<div class="wdbktxt1">包括但不限于方便面，自煮火锅，速成粥。 或者其他在路途上的干粮，比如新疆的馕配酸奶。</div>
+								<div class="wdbktxt2">
+									<div class="wdbkttxt21">
+										<span class="wdbkttxt21 span1">青年情感</span>
+										<span class="wdbkttxt21 span2">情感</span>
+										<span class="wdbkttxt21 span3">2018-04-05 10:10:00</span>
+									</div>
+								<span class="wdbkttxtright">133</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="/" class="wdbkbox">
+						<div class="leftwdbkin1">
+							<div class="wdbkinimg">
+								<img src="img/20170725170813_2461.jpg"/>
+							</div>
+							<div class="wdbktxt">
+								<h3 class="wdbktxth3">你吃过最令人感动的方便食品或小吃是什么？</h3>
+								<div class="wdbktxt1">包括但不限于方便面，自煮火锅，速成粥。 或者其他在路途上的干粮，比如新疆的馕配酸奶。</div>
+								<div class="wdbktxt2">
+									<div class="wdbkttxt21">
+										<span class="wdbkttxt21 span1">青年情感</span>
+										<span class="wdbkttxt21 span2">情感</span>
+										<span class="wdbkttxt21 span3">2018-04-05 10:10:00</span>
+									</div>
+								<span class="wdbkttxtright">133</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="/" class="wdbkbox">
+						<div class="leftwdbkin1">
+							<div class="wdbkinimg">
+								<img src="img/20170725170813_2461.jpg"/>
+							</div>
+							<div class="wdbktxt">
+								<h3 class="wdbktxth3">你吃过最令人感动的方便食品或小吃是什么？</h3>
+								<div class="wdbktxt1">包括但不限于方便面，自煮火锅，速成粥。 或者其他在路途上的干粮，比如新疆的馕配酸奶。</div>
+								<div class="wdbktxt2">
+									<div class="wdbkttxt21">
+										<span class="wdbkttxt21 span1">青年情感</span>
+										<span class="wdbkttxt21 span2">情感</span>
+										<span class="wdbkttxt21 span3">2018-04-05 10:10:00</span>
+									</div>
+								<span class="wdbkttxtright">133</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="/" class="wdbkbox">
+						<div class="leftwdbkin1">
+							<div class="wdbkinimg">
+								<img src="img/20170725170813_2461.jpg"/>
+							</div>
+							<div class="wdbktxt">
+								<h3 class="wdbktxth3">你吃过最令人感动的方便食品或小吃是什么？</h3>
+								<div class="wdbktxt1">包括但不限于方便面，自煮火锅，速成粥。 或者其他在路途上的干粮，比如新疆的馕配酸奶。</div>
+								<div class="wdbktxt2">
+									<div class="wdbkttxt21">
+										<span class="wdbkttxt21 span1">青年情感</span>
+										<span class="wdbkttxt21 span2">情感</span>
+										<span class="wdbkttxt21 span3">2018-04-05 10:10:00</span>
+									</div>
+								<span class="wdbkttxtright">133</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="rightwdbk">
+				<div class="rightwdbktop">
+					<h3 class="hyzz">活跃组织</h3>
+					<a href="/" class="rightwdbka">more></a>
+				</div>
+				<div class="rightwdbkin">
+					<ul class="rightwdbkul">
+						<li class="rightwdbkli">
+							<a href="/" class="rightwdbklia">
+								<div class="rightwdbkimg"><img src="img/20171030113210_682u=19910849102658571244&fm=27&gp=0.jpg"/></div>
+								<div class="rightwdbktxt">
+									<div class="rightwdbktxt1">
+										<p class="rightwdbktxt1p">海南共青团</p>
+									</div>
+									<p class="rightwdbktxt2">已解答12345个问题</p>
+									<div class="kbox">
+								
+									</div>
+								</div>
+							</a>
+							<a href="/" class="rightwdbka2">向TA提问</a>
+						</li>
+						<li class="rightwdbkli">
+							<a href="/" class="rightwdbklia">
+								<div class="rightwdbkimg"><img src="img/20171030113210_682u=19910849102658571244&fm=27&gp=0.jpg"/></div>
+								<div class="rightwdbktxt">
+									<div class="rightwdbktxt1">
+										<p class="rightwdbktxt1p">海南共青团</p>
+									</div>
+									<p class="rightwdbktxt2">已解答12345个问题</p>
+									<div class="kbox">
+								
+									</div>
+								</div>
+							</a>
+							<a href="/" class="rightwdbka2">向TA提问</a>
+						</li>
+						<li class="rightwdbkli">
+							<a href="/" class="rightwdbklia">
+								<div class="rightwdbkimg"><img src="img/20171030113210_682u=19910849102658571244&fm=27&gp=0.jpg"/></div>
+								<div class="rightwdbktxt">
+									<div class="rightwdbktxt1">
+										<p class="rightwdbktxt1p">海南共青团</p>
+									</div>
+									<p class="rightwdbktxt2">已解答12345个问题</p>
+									<div class="kbox">
+								
+									</div>
+								</div>
+							</a>
+							<a href="/" class="rightwdbka2">向TA提问</a>
+						</li>
+						<li class="rightwdbkli">
+							<a href="/" class="rightwdbklia">
+								<div class="rightwdbkimg"><img src="img/20171030113210_682u=19910849102658571244&fm=27&gp=0.jpg"/></div>
+								<div class="rightwdbktxt">
+									<div class="rightwdbktxt1">
+										<p class="rightwdbktxt1p">海南共青团</p>
+									</div>
+									<p class="rightwdbktxt2">已解答12345个问题</p>
+									<div class="kbox">
+								
+									</div>
+								</div>
+							</a>
+							<a href="/" class="rightwdbka2">向TA提问</a>
+						</li>
+						<li class="rightwdbkli">
+							<a href="/" class="rightwdbklia">
+								<div class="rightwdbkimg"><img src="img/20171030113210_682u=19910849102658571244&fm=27&gp=0.jpg"/></div>
+								<div class="rightwdbktxt">
+									<div class="rightwdbktxt1">
+										<p class="rightwdbktxt1p">海南共青团</p>
+									</div>
+									<p class="rightwdbktxt2">已解答12345个问题</p>
+									<div class="kbox">
+								
+									</div>
+								</div>
+							</a>
+							<a href="/" class="rightwdbka2">向TA提问</a>
+						</li>
+						<li class="rightwdbkli">
+							<a href="/" class="rightwdbklia">
+								<div class="rightwdbkimg"><img src="img/20171030113210_682u=19910849102658571244&fm=27&gp=0.jpg"/></div>
+								<div class="rightwdbktxt">
+									<div class="rightwdbktxt1">
+										<p class="rightwdbktxt1p">海南共青团</p>
+									</div>
+									<p class="rightwdbktxt2">已解答12345个问题</p>
+									<div class="kbox">
+								
+									</div>
+								</div>
+							</a>
+							<a href="/" class="rightwdbka2">向TA提问</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tjzj">
+		<div class="tjzjpx">
+			<div class="tjzjtop">
+				<h3 class="tjzjtoph3">推荐专家</h3>
+				<a href="/" class="tjzjtopa">More></a>
+			</div>
+			<div class="tjzjin">
+				<div class="tjzjinbox">
+					<div class="tjzjinboxwhat">
+						<div class="tjzjinboxphoto">
+							<ul class="tjzjinul">
+								<li class="tjzjinli">
+									<a href="/" class="tjzjinlia">
+										<div class="tjzjinliadiv">
+											<div class="tjzjinliaimg">
+												<img src="img/20170719091734_3511.jpg" class="tjzjinliaimg1"/>
+											</div>
+											<h2 class="tjzjinliah2">周可欣</h2>
+											<p class="tjzjinliap">自媒体运营</p>
+											<button class="tjzjinliatw">向TA提问</button>
+										</div>
+									</a>
+								</li>
+								<li class="tjzjinli">
+									<a href="/" class="tjzjinlia">
+										<div class="tjzjinliadiv">
+											<div class="tjzjinliaimg">
+												<img src="img/20170719091734_3511.jpg" class="tjzjinliaimg1"/>
+											</div>
+											<h2 class="tjzjinliah2">周可欣</h2>
+											<p class="tjzjinliap">自媒体运营</p>
+											<button class="tjzjinliatw">向TA提问</button>
+										</div>
+									</a>
+								</li>
+								<li class="tjzjinli">
+									<a href="/" class="tjzjinlia">
+										<div class="tjzjinliadiv">
+											<div class="tjzjinliaimg">
+												<img src="img/20170719091734_3511.jpg" class="tjzjinliaimg1"/>
+											</div>
+											<h2 class="tjzjinliah2">周可欣</h2>
+											<p class="tjzjinliap">自媒体运营</p>
+											<button class="tjzjinliatw">向TA提问</button>
+										</div>
+									</a>
+								</li>
+								<li class="tjzjinli">
+									<a href="/" class="tjzjinlia">
+										<div class="tjzjinliadiv">
+											<div class="tjzjinliaimg">
+												<img src="img/20170719091734_3511.jpg" class="tjzjinliaimg1"/>
+											</div>
+											<h2 class="tjzjinliah2">周可欣</h2>
+											<p class="tjzjinliap">自媒体运营</p>
+											<button class="tjzjinliatw">向TA提问</button>
+										</div>
+									</a>
+								</li>
+								<li class="tjzjinli">
+									<a href="/" class="tjzjinlia">
+										<div class="tjzjinliadiv">
+											<div class="tjzjinliaimg">
+												<img src="img/20170719091734_3511.jpg" class="tjzjinliaimg1"/>
+											</div>
+											<h2 class="tjzjinliah2">周可欣</h2>
+											<p class="tjzjinliap">自媒体运营</p>
+											<button class="tjzjinliatw">向TA提问</button>
+										</div>
+									</a>
+								</li>
+								<li class="tjzjinli">
+									<a href="/" class="tjzjinlia">
+										<div class="tjzjinliadiv">
+											<div class="tjzjinliaimg">
+												<img src="img/20170719091734_3511.jpg" class="tjzjinliaimg1"/>
+											</div>
+											<h2 class="tjzjinliah2">周可欣</h2>
+											<p class="tjzjinliap">自媒体运营</p>
+											<button class="tjzjinliatw">向TA提问</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<a href="/" class="tjzjinboxphoto prev"></a>
+							<a href="/" class="tjzjinboxphoto next"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="helpcenter" style=" overflow: hidden;">
+		<div class="helpcenterpx">
+			<div class="helpcenterleft">
+				<div class="helpcenterlefttop">
+					<div class="helpcenterlefttoptit">
+						<h3 class="helpcentertoptith31">求助中</h3>
+						<h3 class="helpcentertoptith32">已解决</h3>
+						<a href="/" class="helpcentertoptita">More></a>
+					</div>
+				</div>
+				<div class="helpcenterin">
+					<ul class="helpcenterinul">
+						<div class="helpcenterinuldiv">
+							<a href="/" class="helpcenterinuldiva">
+								<div class="helpcenterinitem">
+									<div class="helpcenterinitemimg">
+										<img src="img/20180329160821_305timg.jpg" class="helpcenterinitemimgin"/>
+									</div>
+									<div class="helpcenterlefttxt">
+										<div class="helpcenterlefttxttop">
+											<span class="helpcenterlefttxttopspan">求助中</span>
+											<h3 class="helpcenterlefttxttoph3">《大家一起来玩啊》</h3>
+										</div>
+										<div class="helpcenterlefttxtlong">
+											<p>春节的脚步越来越近了，年味儿渐渐浓起来，大街小巷洋溢着过年的气氛。大年三十,我们全家吃完团圆饭欢天喜地的迎接新年,一起等待新年钟声的敲响.....可是等待敲响的钟声并不是喜悦之声而且沉痛之声。当晚肚子异常疼痛，我以为只是简单的腹泻。殊不知，到医院检查被告知胃出血和肝肿瘤，更让我意想不到的是肝癌。对于这个结果，我无法接受怎么可能这种厄运降临到我身上，我才22岁正在上大二想回去读书报恩父母回报社会...！我瞬间觉得天塌了...但是我必须坚强起来把每一天都活的漂亮，心里默念我每多活一天我就多赚一天！</p>
+										</div>
+										<div class="helpcenterlefttxtmiddle">
+											<span class="helpcenterlefttxtmiddleleft">受理方：xxx</span>
+											<span class="helpcenterlefttxtmiddleright">求助类型：xxxx</span>
+										</div>
+										<div class="helpcenterlefttxtbottom">
+											<span class="helpcenterlefttxtbottomspan1">4</span>
+											<span class="helpcenterlefttxtbottomspan2">2018-06-60</span>
+											<button class="helpcenterlefttxtbottombu">我要帮TA</button>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="/" class="helpcenterinuldiva">
+								<div class="helpcenterinitem">
+									<div class="helpcenterinitemimg">
+										<img src="img/20180329160821_305timg.jpg" class="helpcenterinitemimgin"/>
+									</div>
+									<div class="helpcenterlefttxt">
+										<div class="helpcenterlefttxttop">
+											<span class="helpcenterlefttxttopspan">求助中</span>
+											<h3 class="helpcenterlefttxttoph3">《大家一起来玩啊》</h3>
+										</div>
+										<div class="helpcenterlefttxtlong">
+											<p>春节的脚步越来越近了，年味儿渐渐浓起来，大街小巷洋溢着过年的气氛。大年三十,我们全家吃完团圆饭欢天喜地的迎接新年,一起等待新年钟声的敲响.....可是等待敲响的钟声并不是喜悦之声而且沉痛之声。当晚肚子异常疼痛，我以为只是简单的腹泻。殊不知，到医院检查被告知胃出血和肝肿瘤，更让我意想不到的是肝癌。对于这个结果，我无法接受怎么可能这种厄运降临到我身上，我才22岁正在上大二想回去读书报恩父母回报社会...！我瞬间觉得天塌了...但是我必须坚强起来把每一天都活的漂亮，心里默念我每多活一天我就多赚一天！</p>
+										</div>
+										<div class="helpcenterlefttxtmiddle">
+											<span class="helpcenterlefttxtmiddleleft">受理方：xxx</span>
+											<span class="helpcenterlefttxtmiddleright">求助类型：xxxx</span>
+										</div>
+										<div class="helpcenterlefttxtbottom">
+											<span class="helpcenterlefttxtbottomspan1">4</span>
+											<span class="helpcenterlefttxtbottomspan2">2018-06-60</span>
+											<button class="helpcenterlefttxtbottombu">我要帮TA</button>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="/" class="helpcenterinuldiva">
+								<div class="helpcenterinitem">
+									<div class="helpcenterinitemimg">
+										<img src="img/20180329160821_305timg.jpg" class="helpcenterinitemimgin"/>
+									</div>
+									<div class="helpcenterlefttxt">
+										<div class="helpcenterlefttxttop">
+											<span class="helpcenterlefttxttopspan">求助中</span>
+											<h3 class="helpcenterlefttxttoph3">《大家一起来玩啊》</h3>
+										</div>
+										<div class="helpcenterlefttxtlong">
+											<p>春节的脚步越来越近了，年味儿渐渐浓起来，大街小巷洋溢着过年的气氛。大年三十,我们全家吃完团圆饭欢天喜地的迎接新年,一起等待新年钟声的敲响.....可是等待敲响的钟声并不是喜悦之声而且沉痛之声。当晚肚子异常疼痛，我以为只是简单的腹泻。殊不知，到医院检查被告知胃出血和肝肿瘤，更让我意想不到的是肝癌。对于这个结果，我无法接受怎么可能这种厄运降临到我身上，我才22岁正在上大二想回去读书报恩父母回报社会...！我瞬间觉得天塌了...但是我必须坚强起来把每一天都活的漂亮，心里默念我每多活一天我就多赚一天！</p>
+										</div>
+										<div class="helpcenterlefttxtmiddle">
+											<span class="helpcenterlefttxtmiddleleft">受理方：xxx</span>
+											<span class="helpcenterlefttxtmiddleright">求助类型：xxxx</span>
+										</div>
+										<div class="helpcenterlefttxtbottom">
+											<span class="helpcenterlefttxtbottomspan1">4</span>
+											<span class="helpcenterlefttxtbottomspan2">2018-06-60</span>
+											<button class="helpcenterlefttxtbottombu">我要帮TA</button>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="/" class="helpcenterinuldiva">
+								<div class="helpcenterinitem">
+									<div class="helpcenterinitemimg">
+										<img src="img/20180329160821_305timg.jpg" class="helpcenterinitemimgin"/>
+									</div>
+									<div class="helpcenterlefttxt">
+										<div class="helpcenterlefttxttop">
+											<span class="helpcenterlefttxttopspan">求助中</span>
+											<h3 class="helpcenterlefttxttoph3">《大家一起来玩啊》</h3>
+										</div>
+										<div class="helpcenterlefttxtlong">
+											<p>春节的脚步越来越近了，年味儿渐渐浓起来，大街小巷洋溢着过年的气氛。大年三十,我们全家吃完团圆饭欢天喜地的迎接新年,一起等待新年钟声的敲响.....可是等待敲响的钟声并不是喜悦之声而且沉痛之声。当晚肚子异常疼痛，我以为只是简单的腹泻。殊不知，到医院检查被告知胃出血和肝肿瘤，更让我意想不到的是肝癌。对于这个结果，我无法接受怎么可能这种厄运降临到我身上，我才22岁正在上大二想回去读书报恩父母回报社会...！我瞬间觉得天塌了...但是我必须坚强起来把每一天都活的漂亮，心里默念我每多活一天我就多赚一天！</p>
+										</div>
+										<div class="helpcenterlefttxtmiddle">
+											<span class="helpcenterlefttxtmiddleleft">受理方：xxx</span>
+											<span class="helpcenterlefttxtmiddleright">求助类型：xxxx</span>
+										</div>
+										<div class="helpcenterlefttxtbottom">
+											<span class="helpcenterlefttxtbottomspan1">4</span>
+											<span class="helpcenterlefttxtbottomspan2">2018-06-60</span>
+											<button class="helpcenterlefttxtbottombu">我要帮TA</button>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="/" class="helpcenterinuldiva">
+								<div class="helpcenterinitem">
+									<div class="helpcenterinitemimg">
+										<img src="img/20180329160821_305timg.jpg" class="helpcenterinitemimgin"/>
+									</div>
+									<div class="helpcenterlefttxt">
+										<div class="helpcenterlefttxttop">
+											<span class="helpcenterlefttxttopspan">求助中</span>
+											<h3 class="helpcenterlefttxttoph3">《大家一起来玩啊》</h3>
+										</div>
+										<div class="helpcenterlefttxtlong">
+											<p>春节的脚步越来越近了，年味儿渐渐浓起来，大街小巷洋溢着过年的气氛。大年三十,我们全家吃完团圆饭欢天喜地的迎接新年,一起等待新年钟声的敲响.....可是等待敲响的钟声并不是喜悦之声而且沉痛之声。当晚肚子异常疼痛，我以为只是简单的腹泻。殊不知，到医院检查被告知胃出血和肝肿瘤，更让我意想不到的是肝癌。对于这个结果，我无法接受怎么可能这种厄运降临到我身上，我才22岁正在上大二想回去读书报恩父母回报社会...！我瞬间觉得天塌了...但是我必须坚强起来把每一天都活的漂亮，心里默念我每多活一天我就多赚一天！</p>
+										</div>
+										<div class="helpcenterlefttxtmiddle">
+											<span class="helpcenterlefttxtmiddleleft">受理方：xxx</span>
+											<span class="helpcenterlefttxtmiddleright">求助类型：xxxx</span>
+										</div>
+										<div class="helpcenterlefttxtbottom">
+											<span class="helpcenterlefttxtbottomspan1">4</span>
+											<span class="helpcenterlefttxtbottomspan2">2018-06-60</span>
+											<button class="helpcenterlefttxtbottombu">我要帮TA</button>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="helpcenterright">
+				<div class="helpcenterrighttop">
+					<h3 class="helpcenterrighttoph3">爱心组织</h3>
+					<a href="/" class="helpcenterrighttopa">More></a>
+				</div>
+				<div class="helpcenterrightin">
+					<ul class="helpcenterrightinul">
+						<li class="helpcenterrightinli">
+							<a href="/">
+								<div class="helpcenterrightinimg">
+									<img src="img/20170109171616_8051.jpg"/>
+								</div>
+							</a>
+							<div class="helpcenterrightintxt">
+								<a href="/" class="helpcenterrightintxta">
+									<div class="helpcenterrightintxta1">
+										<p class="helpcenterrightintxta1p">广东共青团</p>
+									</div>
+									<div class="helpcenterrightintxta2">
+										<span class="helpcenterrightintxta2span1">3分</span>
+										<span class="helpcenterrightintxta2span2">1人已评</span>
+									</div>
+								</a>
+								<div class="helpcenterrightintxtdown">
+									<a href="/">
+										<span class="helpcenterrightintxtdownspan">已解决求助 13次</span>
+									</a>
+									<a href="/" class="helpcenterrightintxtdowna">14389人关注</a>
+								</div>
+							</div>
+						</li>
+						<li class="helpcenterrightinli">
+							<a href="/">
+								<div class="helpcenterrightinimg">
+									<img src="img/20170109171616_8051.jpg"/>
+								</div>
+							</a>
+							<div class="helpcenterrightintxt">
+								<a href="/" class="helpcenterrightintxta">
+									<div class="helpcenterrightintxta1">
+										<p class="helpcenterrightintxta1p">广东共青团</p>
+									</div>
+									<div class="helpcenterrightintxta2">
+										<span class="helpcenterrightintxta2span1">3分</span>
+										<span class="helpcenterrightintxta2span2">1人已评</span>
+									</div>
+								</a>
+								<div class="helpcenterrightintxtdown">
+									<a href="/">
+										<span class="helpcenterrightintxtdownspan">已解决求助 13次</span>
+									</a>
+									<a href="/" class="helpcenterrightintxtdowna">14389人关注</a>
+								</div>
+							</div>
+						</li>
+						<li class="helpcenterrightinli">
+							<a href="/">
+								<div class="helpcenterrightinimg">
+									<img src="img/20170109171616_8051.jpg"/>
+								</div>
+							</a>
+							<div class="helpcenterrightintxt">
+								<a href="/" class="helpcenterrightintxta">
+									<div class="helpcenterrightintxta1">
+										<p class="helpcenterrightintxta1p">广东共青团</p>
+									</div>
+									<div class="helpcenterrightintxta2">
+										<span class="helpcenterrightintxta2span1">3分</span>
+										<span class="helpcenterrightintxta2span2">1人已评</span>
+									</div>
+								</a>
+								<div class="helpcenterrightintxtdown">
+									<a href="/">
+										<span class="helpcenterrightintxtdownspan">已解决求助 13次</span>
+									</a>
+									<a href="/" class="helpcenterrightintxtdowna">14389人关注</a>
+								</div>
+							</div>
+						</li>
+						<li class="helpcenterrightinli">
+							<a href="/">
+								<div class="helpcenterrightinimg">
+									<img src="img/20170109171616_8051.jpg"/>
+								</div>
+							</a>
+							<div class="helpcenterrightintxt">
+								<a href="/" class="helpcenterrightintxta">
+									<div class="helpcenterrightintxta1">
+										<p class="helpcenterrightintxta1p">广东共青团</p>
+									</div>
+									<div class="helpcenterrightintxta2">
+										<span class="helpcenterrightintxta2span1">3分</span>
+										<span class="helpcenterrightintxta2span2">1人已评</span>
+									</div>
+								</a>
+								<div class="helpcenterrightintxtdown">
+									<a href="/">
+										<span class="helpcenterrightintxtdownspan">已解决求助 13次</span>
+									</a>
+									<a href="/" class="helpcenterrightintxtdowna">14389人关注</a>
+								</div>
+							</div>
+						</li>
+						<li class="helpcenterrightinli">
+							<a href="/">
+								<div class="helpcenterrightinimg">
+									<img src="img/20170109171616_8051.jpg"/>
+								</div>
+							</a>
+							<div class="helpcenterrightintxt">
+								<a href="/" class="helpcenterrightintxta">
+									<div class="helpcenterrightintxta1">
+										<p class="helpcenterrightintxta1p">广东共青团</p>
+									</div>
+									<div class="helpcenterrightintxta2">
+										<span class="helpcenterrightintxta2span1">3分</span>
+										<span class="helpcenterrightintxta2span2">1人已评</span>
+									</div>
+								</a>
+								<div class="helpcenterrightintxtdown">
+									<a href="/">
+										<span class="helpcenterrightintxtdownspan">已解决求助 13次</span>
+									</a>
+									<a href="/" class="helpcenterrightintxtdowna">14389人关注</a>
+								</div>
+							</div>
+						</li>
+						<li class="helpcenterrightinli">
+							<a href="/">
+								<div class="helpcenterrightinimg">
+									<img src="img/20170109171616_8051.jpg"/>
+								</div>
+							</a>
+							<div class="helpcenterrightintxt">
+								<a href="/" class="helpcenterrightintxta">
+									<div class="helpcenterrightintxta1">
+										<p class="helpcenterrightintxta1p">广东共青团</p>
+									</div>
+									<div class="helpcenterrightintxta2">
+										<span class="helpcenterrightintxta2span1">3分</span>
+										<span class="helpcenterrightintxta2span2">1人已评</span>
+									</div>
+								</a>
+								<div class="helpcenterrightintxtdown">
+									<a href="/">
+										<span class="helpcenterrightintxtdownspan">已解决求助 13次</span>
+									</a>
+									<a href="/" class="helpcenterrightintxtdowna">14389人关注</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="helpcenterrightbutton">
+					<a href="/" class="helpcenterrightbutton1"></a>
+					<a href="/" class="helpcenterrightbutton2"></a>
+					<a href="/" class="helpcenterrightbutton3"></a>
+				</div>
+			</div>
+		</div>
+	</div>  
+	<div class="xxfw">
+		<div class="xxfwpx">
+			<div class="xxfwtop">
+				<h3 class="xxfwtoph3">线下服务</h3>
+			</div>
+			<div class="map">
+				<a href="/" class="maptext">查看更多服务站点</a>
+				<img class="mapimg" src="img/botMap.png" width="1201" />
+			</div>
+		</div>
+	</div>
+	<div class="sorlltop">
+		<img class="sorlltopimg" src="img/reten-top-ico.png"/>
+	</div>
+	<div class="layer">
+		<img class="layerimg" src="img/1.png"/>
+	</div>
+	<div class="footer">
+		<div class="footernice">
+			<div class="footercent">
+				<div class="footercent-left">
+					<a class="footercent-left-img" href="/">
+						<img src="img/20171227185720_784red.png"/>
+					</a>
+				</div>
+				<div class="footercent-right">
+					<a href="/" style="color: #FFFFFF; text-decoration: none;">触屏版</a>
+					<p>版权所有 copyright 2016 广东青年之声 中国共产主义青年团广东省委员会</p>
+					<p>技术支持：广东汇青信息科技有限公司  客服邮箱：kf@12355.net</p>
+					<a href="/" style="color: #FFFFFF; text-decoration: none;">粤ICP备10214402号-4</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
