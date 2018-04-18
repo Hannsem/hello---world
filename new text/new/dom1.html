@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+</head>
+<style type="text/css">
+	*{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .at{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .dom{
+        	margin-top: 100px;
+        	background-color: #333;
+        	overflow: hidden;
+        	padding: 16px 0;
+        	height: 105px;
+        }
+        .dom_a{
+        	width: 222px;
+        	height: 100px;
+        	position: relative;
+        }
+        .dom_con{
+        	margin: 0;
+        	padding: 0;
+        	margin: 0 auto;
+        }
+        .dom_con li{
+        	float: left;
+        	margin: 0 auto;
+        	margin-left: 16px;
+        }
+</style>
+<body>
+<div class="at dom">
+	<ul class="dom_con">
+		<li>
+			<a href="/" class="dom_a"><img class="dom_li" src="0 (10).jpg" style="border:1px outset transparent;"/></a>
+		</li>
+		<li>
+			<a href="/" class="dom_a"><img class="dom_li" src="0 (10).jpg" style="border:1px outset transparent;"/></a>
+		</li>
+		<li>
+			<a href="/" class="dom_a"><img class="dom_li" src="0 (10).jpg" style="border:1px outset transparent;"/></a>
+		</li>
+		<li>
+			<a href="/" class="dom_a"><img class="dom_li" src="0 (10).jpg" style="border:1px outset transparent;"/></a>
+		</li>
+		<li>
+			<a href="/" class="dom_a"><img class="dom_li" src="0 (10).jpg" style="border:1px outset transparent;"/></a>
+		</li>
+		
+	</ul>
+</div>
+<script type="text/javascript">
+	var aa=document.getElementsByClassName('dom_li')
+	aa[0].onmouseover=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[0].style.border='1px solid yellow'
+		aa[0].style.boxShadow='0px 0px 50px yellow'	
+	}
+	aa[0].onmouseout=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[0].style.border='1px outset transparent'
+		aa[0].style.boxShadow=''
+	}
+		aa[1].onmouseover=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[1].style.border='1px solid yellow'
+		aa[1].style.boxShadow='0px 0px 50px yellow'	
+	}
+	aa[1].onmouseout=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[1].style.border='1px outset transparent'
+		aa[1].style.boxShadow=''
+	}
+		aa[2].onmouseover=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[2].style.border='1px solid yellow'
+		aa[2].style.boxShadow='0px 0px 50px yellow'	
+	}
+	aa[2].onmouseout=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[2].style.border='1px outset transparent'
+		aa[2].style.boxShadow=''
+	}
+		aa[3].onmouseover=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[3].style.border='1px solid yellow'
+		aa[3].style.boxShadow='0px 0px 50px yellow'	
+	}
+	aa[3].onmouseout=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[3].style.border='1px outset transparent'
+		aa[3].style.boxShadow=''
+	}
+		aa[4].onmouseover=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[4].style.border='1px solid yellow'
+		aa[4].style.boxShadow='0px 0px 50px yellow'	
+	}
+	aa[4].onmouseout=function(){
+		var aa=document.getElementsByClassName('dom_li')
+		aa[4].style.border='1px outset transparent'
+		aa[4].style.boxShadow=''
+	}
+</script>
+</body>
+</html>

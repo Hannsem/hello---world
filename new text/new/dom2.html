@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>javascript</title>
+		<style type="text/css">
+			*{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .at{
+            width: 760px;
+            margin: 0 auto;
+        }
+        .dom_top{
+        	float: right;
+        }
+        .dom_top li{
+		    float: left;
+		    width: 47px;
+		    height: 26px;
+		    line-height: 26px;
+		    font-size: 14px;
+		    margin-top: 4px;
+		    margin-right: 6px;
+		    display: block;
+		    overflow: hidden;
+		    text-align: center;
+        }
+        .active{
+		    border-radius: 3px;
+		    background: #ff9a6a;
+		    color: #fff;
+		    font-weight: bold;
+        }
+        .dom_con li{
+        	border: 1px solid #E2E2E2;
+        	margin-left: 20px;
+        }
+        .dom_con_li{
+        	display: none;
+        }
+		</style>
+	</head>
+	<body>
+		<div class="dom at" style="position: relative;">
+			<div class="dom_top" style="overflow: hidden;">
+				<ul>
+					<li class="dom_top_li">周一</li>
+					<li class="dom_top_li">周二</li>
+					<li class="dom_top_li">周三</li>
+					<li class="dom_top_li">周四</li>
+					<li class="dom_top_li">周五</li>
+					<li class="dom_top_li">周六</li>
+					<li class="dom_top_li">周日</li>
+				</ul>
+			</div>
+			<div class="dom_con" style="clear: both; padding: 16px 0; position: relative;">
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>精神榜</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>精神榜</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>精神榜</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>精神榜</p>
+					</li>
+				</ul>
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖</p>
+					</li>
+				</ul>
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖2</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖2</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖2</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖2</p>
+					</li>
+				</ul>
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖3</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖3</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖3</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖3</p>
+					</li>
+				</ul>
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖4</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖4</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖4</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖4</p>
+					</li>
+				</ul>
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖5</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖5</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖5</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖5</p>
+					</li>
+				</ul>
+				<ul class="dom_con_li" style="position: absolute; top: 5px;left: 0;">
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖6</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖6</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖6</p>
+					</li>
+					<li style="float: left;">
+						<a href="/"><img src="420.jpg" style="width: 133px;"/></a>
+						<p>猫妖6</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var a1=document.getElementsByClassName('dom_top_li')
+			var a2=document.getElementsByClassName('dom_con_li')
+			a1[0].onmouseover=function(){
+				a2[0].style.display='block'
+				a2[1].style.display='none'
+				a2[2].style.display='none'
+				a2[3].style.display='none'
+				a2[4].style.display='none'
+				a2[5].style.display='none'
+				a2[6].style.display='none'
+				a1[0].classList.add('active')
+				a1[1].classList.remove('active')
+				a1[2].classList.remove('active')
+				a1[3].classList.remove('active')
+				a1[4].classList.remove('active')
+				a1[5].classList.remove('active')
+				a1[6].classList.remove('active')
+			}
+			a1[1].onmouseover=function(){
+				a2[0].style.display='none'
+				a2[1].style.display='block'
+				a2[2].style.display='none'
+				a2[3].style.display='none'
+				a2[4].style.display='none'
+				a2[5].style.display='none'
+				a2[6].style.display='none'
+				a1[0].classList.remove('active')
+				a1[1].classList.add('active')
+				a1[2].classList.remove('active')
+				a1[3].classList.remove('active')
+				a1[4].classList.remove('active')
+				a1[5].classList.remove('active')
+				a1[6].classList.remove('active')
+			}
+			a1[2].onmouseover=function(){
+				a2[0].style.display='none'
+				a2[1].style.display='none'
+				a2[2].style.display='block'
+				a2[3].style.display='none'
+				a2[4].style.display='none'
+				a2[5].style.display='none'
+				a2[6].style.display='none'
+				a1[0].classList.remove('active')
+				a1[1].classList.remove('active')
+				a1[2].classList.add('active')
+				a1[3].classList.remove('active')
+				a1[4].classList.remove('active')
+				a1[5].classList.remove('active')
+				a1[6].classList.remove('active')
+			}
+			a1[3].onmouseover=function(){
+				a2[0].style.display='none'
+				a2[1].style.display='none'
+				a2[2].style.display='none'
+				a2[3].style.display='block'
+				a2[4].style.display='none'
+				a2[5].style.display='none'
+				a2[6].style.display='none'
+				a1[0].classList.remove('active')
+				a1[1].classList.remove('active')
+				a1[2].classList.remove('active')
+				a1[3].classList.add('active')
+				a1[4].classList.remove('active')
+				a1[5].classList.remove('active')
+				a1[6].classList.remove('active')
+			}
+			a1[4].onmouseover=function(){
+				a2[0].style.display='none'
+				a2[1].style.display='none'
+				a2[2].style.display='none'
+				a2[3].style.display='none'
+				a2[4].style.display='block'
+				a2[5].style.display='none'
+				a2[6].style.display='none'
+				a1[0].classList.remove('active')
+				a1[1].classList.remove('active')
+				a1[2].classList.remove('active')
+				a1[3].classList.remove('active')
+				a1[4].classList.add('active')
+				a1[5].classList.remove('active')
+				a1[6].classList.remove('active')
+			}
+			a1[5].onmouseover=function(){
+				a2[0].style.display='none'
+				a2[1].style.display='none'
+				a2[2].style.display='none'
+				a2[3].style.display='none'
+				a2[4].style.display='none'
+				a2[5].style.display='block'
+				a2[6].style.display='none'
+				a1[0].classList.remove('active')
+				a1[1].classList.remove('active')
+				a1[2].classList.remove('active')
+				a1[3].classList.remove('active')
+				a1[4].classList.remove('active')
+				a1[5].classList.add('active')
+				a1[6].classList.remove('active')
+			}
+			a1[6].onmouseover=function(){
+				a2[0].style.display='none'
+				a2[1].style.display='none'
+				a2[2].style.display='none'
+				a2[3].style.display='none'
+				a2[4].style.display='none'
+				a2[5].style.display='none'
+				a2[6].style.display='block'
+				a1[0].classList.remove('active')
+				a1[1].classList.remove('active')
+				a1[2].classList.remove('active')
+				a1[3].classList.remove('active')
+				a1[4].classList.remove('active')
+				a1[5].classList.remove('active')
+				a1[6].classList.add('active')
+			}
+		</script>
+	</body>
+</html>

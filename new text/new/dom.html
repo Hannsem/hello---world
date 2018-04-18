@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .at{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .dom{
+            margin-top: 50px;
+            position: relative;
+        }
+        .dom_ul{
+            /*border: 1px solid red;*/
+            position: relative;
+        }
+        .dom_li{
+            height: 30px;
+            /*border: 1px solid red;*/
+            margin-left: 10px;
+            float: left;
+
+        }
+        .underbox{
+            position: absolute;
+            padding: 10px ;
+            border: 1px solid #e2e2e2;
+            margin-top: 10px;
+            left: -50px;
+            display:none;
+        }
+        .box0{
+            left: -68px;
+        }
+        .box1{
+            left:43px;
+        }
+        .box2{
+            left: 145px;
+        }
+        .box3{
+            left: 252px;
+        }
+    </style>
+</head>
+<body>
+<div class="dom at">
+    <ul class="dom_ul">
+        <li class="dom_li">
+            <a href="/" class="dom_a">我的天劫女友</a>
+            <div class="underbox box0">
+                <div style="width: 10px;height: 10px;border-top: 1px solid #e2e2e2;border-left: 1px solid #e2e2e2;background-color: white;transform: rotate(45deg);position: absolute;top:-5px;left: 50%"></div>
+                <a href="/"><img src="./0.jpg" width="214" height="126"></a>
+                <p>我的天劫女友</p>
+            </div>
+        </li>
+        <li class="dom_li">
+            <a href="/" class="dom_a">我的天劫女友</a>
+            <div class="underbox box1">
+                <div style="width: 10px;height: 10px;border-top: 1px solid #e2e2e2;border-left: 1px solid #e2e2e2;background-color: white;transform: rotate(45deg);position: absolute;top:-5px;left: 50%"></div>
+                <a href="/"><img src="./0.jpg" width="214" height="126"></a>
+                <p>我的天劫女友</p>
+            </div>
+        </li>
+        <li class="dom_li">
+            <a href="/">我的天劫女友</a>
+            <div class="underbox box2">
+                <div style="width: 10px;height: 10px;border-top: 1px solid #e2e2e2;border-left: 1px solid #e2e2e2;background-color: white;transform: rotate(45deg);position: absolute;top:-5px;left: 50%"></div>
+                <a href="/"><img src="./0.jpg" width="214" height="126"></a>
+                <p>我的天劫女友</p>
+            </div>
+        </li>
+        <li class="dom_li">
+            <a href="/">我的天劫女友</a>
+            <div class="underbox box3">
+                <div style="width: 10px;height: 10px;border-top: 1px solid #e2e2e2;border-left: 1px solid #e2e2e2;background-color: white;transform: rotate(45deg);position: absolute;top:-5px;left: 50%"></div>
+                <a href="/"><img src="./0.jpg" width="214" height="126"></a>
+                <p>我的天劫女友</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    var aa=document.getElementsByClassName('dom_li')
+    var bb=document.getElementsByClassName('dom_a')
+    bb[0].onmouseover=function () {
+        var bb=document.getElementsByClassName('dom_a')
+        bb[0].style.color='#e2e2e2'
+    }
+    bb[0].onmouseout=function () {
+        var bb=document.getElementsByClassName('dom_a')
+        bb[0].style.color='black'
+    }
+    aa[0].onmouseover=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[0].style.display='block'
+
+    }
+    aa[0].onmouseout=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[0].style.display='none'
+    }
+    aa[1].onmouseover=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[1].style.display='block'
+
+    }
+    aa[1].onmouseout=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[1].style.display='none'
+    }
+    aa[2].onmouseover=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[2].style.display='block'
+
+    }
+    aa[2].onmouseout=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[2].style.display='none'
+    }
+    aa[3].onmouseover=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[3].style.display='block'
+
+    }
+    aa[3].onmouseout=function () {
+        var aa=document.getElementsByClassName('underbox')
+        aa[3].style.display='none'
+    }
+</script>
+</body>
+</html>
