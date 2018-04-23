@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lianxi</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+//    输入两个整数，并输出他们的值显示在页面中。
+//    然后交换两个数的值后，再次输出在页面中：
+//
+//    交换两个数：　如：
+//    ａ＝５　　　ｂ＝３
+//
+//    要实现最后结果是：	a=3,  b=5
+
+//    var a=parseInt(prompt('请输入a'))
+//    var b=parseInt(prompt('请输入b'))
+//    var c=a
+//    var d=b
+//    document.write(d,c)
+
+//输入一个整数，然后输出该数的值，如果这个数在50-100之间，再输出一行*****************
+//    var a=parseInt(prompt('请输入一个整数'))
+//    if (a>=50 && a<=100){
+//        document.write(a+'*****************')
+//    }else {
+//        document.write(a)
+//    }
+//
+//让用户输入一个百分制的成绩。（注意要做差错判断，差错判断即为不满足条件的情况）（用单分支写）
+//然后输出其优，良，中，差
+//>=85  优
+//>=75 良
+//>=60 中
+//<60差
+//    var a=parseInt(prompt('请输入一个整数'))
+//    if(a>=84&&a<100){
+//        document.write('优')
+//    }else if(a>=75&&a<84){
+//        document.write('良')
+//    }else if(a>=60&&a<75){
+//        document.write('中')
+//    }else if(a>=0&&a<60){
+//        document.write('差')
+//    }else {
+//        document.write('请重新输入')
+//    }
+
+
+//输入一个年份 看是否是闰年，输出闰年的条件是：(双分支)
+//(1).能被4整除，但同时不能被100整除的年份都是闰年
+//(2).或能被400整除的年份是闰年
+//    var a=parseInt(prompt('请输入一个整数'))
+//    if(a%4==0 && a%100!=0 || a%400==0){
+//        document.write('闰年')
+//    }else {
+//        document.write('不是闰年')
+//    }
+
+
+//输入整数a和b，若a或b大于100，则输出a,b的和与100的差，否则输出a与b的和。
+
+//    var a=parseInt(prompt('请输入a'))
+//    var b=parseInt(prompt('请输入b'))
+//    var c=100
+//    if(a>c||b>c){
+//        document.write(parseInt(a+b-c))
+//    }else {
+//        document.write(a+b)
+//    }
+
+
+
+    //输入一个月份并输出该月份所对应的天数。（2月份，再输入年份）(用if
+//    var a=parseInt(prompt('请输入一个月份'))
+//        if(a<=7&&a%2==1||a ==8){
+//            document.write('31天')
+//        }else if (a==2){
+//            var a=parseInt(prompt('请输入一年份'))
+//                if(a%4==0 && a%100!=0 || a%400==0){
+//                    document.write('29天')
+//                }else {
+//                    document.write('28天')
+//                }
+//        }else if (a>=9&&a<=12&&a%2==0){
+//            document.write('31天')
+//        }else {
+//            document.write('30天')
+//        }
+
+    //输入一个日期，如：XXXX年XX月XX日，判断该日期的下一天是哪年哪月哪日？并输出。
+//（润年： 该年份能被4整除而不能被100整除，或者该年份直接能被400整除）
+//
+//    var year=parseInt(prompt('请输入年'))
+//    var month=parseInt(prompt('请输入月'))
+//    var day=parseInt(prompt('请输入日'))
+//    var two=0
+//    if(year%4==0 && year%100!=0 || year%400==0)
+//        two=1
+//        if (month==2){
+//            if ((day==28&&two==0)||(day==29&&two==1)){
+//                day=1
+//                month++
+//            }
+//    else if (day==29&&two==0){
+//        document.write('今年二月没有29天'+'</br>')
+//                month++
+//                day=1
+//        }
+//        else day++
+//    }
+//    else if (month==12){
+//        if (day==31){
+//            month=1
+//            day=1
+//            year++
+//        }
+//        else day++
+//    }else if (month==1||month==3||month==5||month==7||month==8||month==10){
+//        if(day==31){
+//            day=1
+//            month++
+//        }
+//        else  day++
+//    }else {
+//        if (day == 30) {
+//            day = 1
+//            month++
+//        }
+//        else day++
+//    }
+//    document.write('下一天的日期是：'+year+'年'+month+'月'+day+'日')
+
+//利用for循环输出50行$$$$$$$$$$$$$$$$$$$$$$$$$$$
+//    for(var i=0;i<=50;i++){
+//        document.write('$$$$$$$$$$$$$$$$$$$$$$$$$$$')
+//        document.write('</br>')
+//    }
+
+    //输出1-100之间所有能被3整除的数。
+//        var a;
+//    for (var i=0;i<=100;i++){
+//        if(i%3==0){
+//            document.write(i)
+//        }
+//    }
+
+    //输出n行****************  （n是由用户输入的整数）
+//        var a=parseInt(prompt('请输入'))
+//    for(var i=0;i<a;i++){
+//            document.write('****************')
+//        document.write('</br>')
+//    }
+
+//求1+2+3+...100的所有偶数之和。
+//        var sum=0;
+//    for(var i=0;i<=100;i++){
+//        if (i%2==0) {
+////            document.write(i)
+//            sum+=i
+//        }
+//    }
+//    document.write(sum)
+
+//
+//有一堆零件(100-200之间)，如果分成4个零件一组的若干组，则多2个零件；
+//若分成7零件一组则多3个零件；若分成9个零件一组，则多5个零件，试求出这堆零件的总数.
+//
+//    for(var i=100;i<=200;i++){
+//        if (i%4==2&&i%7==3&&i%9==5){
+//            document.write(i)
+//        }
+//    }
+
+    //求m 到 n 之间所有偶数之和。
+//    var m=parseInt(prompt('请输入一个数'))
+//    var n=parseInt(prompt('请输入一个数'))
+//    var sum=0
+//    if (m>n){
+//        for(n;n<m;n++){
+//            if (n%2==0){
+//                sum+=n
+//            }
+//        }
+//    }else if(m<n){
+//        for(m;m<n;m++){
+//            if (m%2==0){
+//                sum+=m
+//            }
+//        }
+//    }
+//document.write(sum)
+
+//把100——200中不能被3整除的数输出,每四个换一行输出。
+//    var c=[]
+//    for(var i=100;i<=200;i++){
+//        if (i%3!=0){
+//            c.push(i)
+//        }
+//    }
+//    for(var i=0;i<c.length;i++){
+//        if (i%4==0){
+//            document.write('</br>')
+//        }
+//        document.write(c[i])
+//    }
+
+    //判断某个数是否为素数。 被自身和1整除的数
+//
+//    var a=parseInt(prompt('请输入一个数'))
+//        var b=0;
+//        var c=0;
+//    for(var i=2;i<a-1;i++){
+//        if (a%i==0){
+//            b+=a
+//        }else {
+//            c+=a
+//        }
+//    }
+//    if(a=b){
+//        document.write('不是素数')
+//    }else if(a=c){
+//        document.write('是素数')
+//    }
+</script>
+</html>
