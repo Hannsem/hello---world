@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #lb{
+            height: 100px;
+            width:200px;
+            border: 1px red solid;
+            position: relative;
+            margin:  200px auto;
+            /*overflow: hidden;*/
+        }
+        #lb>div:first-child{
+            background: yellow;
+        }
+        #lb>div:nth-child(2){
+            background: #88eeff;
+        }
+        #lb>div:last-child{
+            background: #ff484d;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="lb">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <button onclick="zuo()">
+        zuo
+    </button>
+    <button onclick="you()">
+        you
+    </button>
+
+    <script type="text/javascript">
+
+        function zuo() {
+            fx=-1;
+        }
+
+        function you() {
+            fx=1
+        }
+        //Object  对象类型
+//        var p =new Object();
+//        var a =['d','pp']
+//        var u={a:'d878778',6:77}
+//        alert(u[6]);
+//        alert(u.a)
+//        alert(u['a'])
+        var fx=1
+        var d =[]
+        var s = document.getElementById('lb').getElementsByTagName('div')
+        for(var i = 0; i<s.length;i++){
+           d.push({
+               width:200,
+               height:100,
+               top:0,
+               left:i*200
+           })
+        }
+
+        function set1() {
+            for(var i = 0; i<d.length;i++){
+                s[i].style.position='absolute';
+                s[i].style.top=d[i].top+'px';
+                s[i].style.left=d[i].left+'px';
+                s[i].style.width=d[i].width+'px';
+                s[i].style.height=d[i].height+'px'
+            }
+        }
+        set1();
+
+        function bian() {
+            for(var i = 0; i<d.length;i++){
+                d[i].left= d[i].left + 1*fx
+                if(d[i].left<=-200){
+                    d[i].left=(d.length-1)*d[i].width
+                }
+                if(d[i].left>(d.length-1)*d[i].width ){
+                    d[i].left=-d[i].width
+                }
+            }
+        }
+
+        setInterval(function () {
+            bian()
+            set1();
+        },50)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
